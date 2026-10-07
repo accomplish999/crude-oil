@@ -1,0 +1,422 @@
+{
+  "entries": [
+    {
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "summary": "Baseline snapshot. Retrieval 2026-10-07T10:00:55+00:00. 41 series. Validation against the source files is `scripts/verify.py`.",
+      "changes": [
+        {
+          "id": "CFTC_BRENT",
+          "before": "",
+          "after": "2026-09-29 3571 (770 rows)"
+        },
+        {
+          "id": "CFTC_CL",
+          "before": "",
+          "after": "2026-09-29 122916 (874 rows)"
+        },
+        {
+          "id": "CL1_MINUS_CL4",
+          "before": "",
+          "after": "2024-04-05 2.67 (9449 rows)"
+        },
+        {
+          "id": "COT_PCT",
+          "before": "",
+          "after": "2026-09-29 4.980842912 (874 rows)"
+        },
+        {
+          "id": "COT_Z",
+          "before": "",
+          "after": "2026-09-29 -1.693210604 (874 rows)"
+        },
+        {
+          "id": "CRACK_321",
+          "before": "",
+          "after": "2024-04-05 30.004 (4532 rows)"
+        },
+        {
+          "id": "CRACK_GAP",
+          "before": "",
+          "after": "2024-04-05 13.265 (4532 rows)"
+        },
+        {
+          "id": "CURVE_Z",
+          "before": "",
+          "after": "2024-04-05 1.52005774 (9449 rows)"
+        },
+        {
+          "id": "CUSHING",
+          "before": "",
+          "after": "2026-09-25 24301 (1089 rows)"
+        },
+        {
+          "id": "CUSHING_COVER",
+          "before": "",
+          "after": "2026-09-25 1.49480224 (1089 rows)"
+        },
+        {
+          "id": "DGS10",
+          "before": "",
+          "after": "2026-10-05 5.31 (16175 rows)"
+        },
+        {
+          "id": "DGS10_MINUS_DGS2",
+          "before": "",
+          "after": "2026-10-05 0.47 (12583 rows)"
+        },
+        {
+          "id": "DGS2",
+          "before": "",
+          "after": "2026-10-05 4.84 (12583 rows)"
+        },
+        {
+          "id": "DTWEXBGS",
+          "before": "",
+          "after": "2026-10-02 121.3848 (5203 rows)"
+        },
+        {
+          "id": "GAS_SPOT",
+          "before": "",
+          "after": "2026-09-29 3.329 (9146 rows)"
+        },
+        {
+          "id": "HO_F1",
+          "before": "",
+          "after": "2024-04-05 2.773 (9894 rows)"
+        },
+        {
+          "id": "HO_SPOT",
+          "before": "",
+          "after": "2026-09-29 4.789 (8795 rows)"
+        },
+        {
+          "id": "INV_SURPRISE",
+          "before": "",
+          "after": "2026-09-25 698.076923077 (2239 rows)"
+        },
+        {
+          "id": "RBOB_F1",
+          "before": "",
+          "after": "2024-04-05 2.789 (4609 rows)"
+        },
+        {
+          "id": "RBRTE",
+          "before": "",
+          "after": "2026-09-29 113.96 (9097 rows)"
+        },
+        {
+          "id": "RCLC1",
+          "before": "",
+          "after": "2024-04-05 86.91 (10183 rows)"
+        },
+        {
+          "id": "RCLC2",
+          "before": "",
+          "after": "2024-04-05 86.1 (9594 rows)"
+        },
+        {
+          "id": "RCLC3",
+          "before": "",
+          "after": "2024-04-05 85.2 (10219 rows)"
+        },
+        {
+          "id": "RCLC4",
+          "before": "",
+          "after": "2024-04-05 84.24 (9551 rows)"
+        },
+        {
+          "id": "RV20",
+          "before": "",
+          "after": "2026-09-29 0.821029835 (9432 rows)"
+        },
+        {
+          "id": "RWTC",
+          "before": "",
+          "after": "2026-09-29 96.16 (9512 rows)"
+        },
+        {
+          "id": "SEAS_STOCK",
+          "before": "",
+          "after": "2026-09-25 103424.35625 (2296 rows)"
+        },
+        {
+          "id": "SPR_FLOW",
+          "before": "",
+          "after": "2026-09-25 -785 (2291 rows)"
+        },
+        {
+          "id": "UTIL_DEV",
+          "before": "",
+          "after": "2026-09-25 2.1 (1860 rows)"
+        },
+        {
+          "id": "WCESTUS1",
+          "before": "",
+          "after": "2026-09-25 427320 (2296 rows)"
+        },
+        {
+          "id": "WCREXUS2",
+          "before": "",
+          "after": "2026-09-25 3570 (1746 rows)"
+        },
+        {
+          "id": "WCRFPUS2",
+          "before": "",
+          "after": "2026-09-25 13955 (2279 rows)"
+        },
+        {
+          "id": "WCRIMUS2",
+          "before": "",
+          "after": "2026-09-25 5698 (1489 rows)"
+        },
+        {
+          "id": "WCRRIUS2",
+          "before": "",
+          "after": "2026-09-25 16257 (2296 rows)"
+        },
+        {
+          "id": "WCRSTUS1",
+          "before": "",
+          "after": "2026-09-25 711087 (2296 rows)"
+        },
+        {
+          "id": "WCSSTUS1",
+          "before": "",
+          "after": "2026-09-25 283767 (2296 rows)"
+        },
+        {
+          "id": "WDISTUS1",
+          "before": "",
+          "after": "2026-09-25 105180 (2296 rows)"
+        },
+        {
+          "id": "WGFUPUS2",
+          "before": "",
+          "after": "2026-09-25 8689 (1859 rows)"
+        },
+        {
+          "id": "WGIRIUS2",
+          "before": "",
+          "after": "2026-09-25 16670 (1915 rows)"
+        },
+        {
+          "id": "WGTSTUS1",
+          "before": "",
+          "after": "2026-09-25 204362 (1917 rows)"
+        },
+        {
+          "id": "WPULEUS3",
+          "before": "",
+          "after": "2026-09-25 92.5 (1860 rows)"
+        }
+      ],
+      "snapshot": {
+        "RWTC": {
+          "end": "2026-09-29",
+          "last_value": "96.16",
+          "count": 9512
+        },
+        "RBRTE": {
+          "end": "2026-09-29",
+          "last_value": "113.96",
+          "count": 9097
+        },
+        "RCLC1": {
+          "end": "2024-04-05",
+          "last_value": "86.91",
+          "count": 10183
+        },
+        "RCLC2": {
+          "end": "2024-04-05",
+          "last_value": "86.1",
+          "count": 9594
+        },
+        "RCLC3": {
+          "end": "2024-04-05",
+          "last_value": "85.2",
+          "count": 10219
+        },
+        "RCLC4": {
+          "end": "2024-04-05",
+          "last_value": "84.24",
+          "count": 9551
+        },
+        "HO_F1": {
+          "end": "2024-04-05",
+          "last_value": "2.773",
+          "count": 9894
+        },
+        "RBOB_F1": {
+          "end": "2024-04-05",
+          "last_value": "2.789",
+          "count": 4609
+        },
+        "HO_SPOT": {
+          "end": "2026-09-29",
+          "last_value": "4.789",
+          "count": 8795
+        },
+        "GAS_SPOT": {
+          "end": "2026-09-29",
+          "last_value": "3.329",
+          "count": 9146
+        },
+        "WCESTUS1": {
+          "end": "2026-09-25",
+          "last_value": "427320",
+          "count": 2296
+        },
+        "WCRSTUS1": {
+          "end": "2026-09-25",
+          "last_value": "711087",
+          "count": 2296
+        },
+        "CUSHING": {
+          "end": "2026-09-25",
+          "last_value": "24301",
+          "count": 1089
+        },
+        "WCSSTUS1": {
+          "end": "2026-09-25",
+          "last_value": "283767",
+          "count": 2296
+        },
+        "WDISTUS1": {
+          "end": "2026-09-25",
+          "last_value": "105180",
+          "count": 2296
+        },
+        "WGTSTUS1": {
+          "end": "2026-09-25",
+          "last_value": "204362",
+          "count": 1917
+        },
+        "WGIRIUS2": {
+          "end": "2026-09-25",
+          "last_value": "16670",
+          "count": 1915
+        },
+        "WCRFPUS2": {
+          "end": "2026-09-25",
+          "last_value": "13955",
+          "count": 2279
+        },
+        "WCRRIUS2": {
+          "end": "2026-09-25",
+          "last_value": "16257",
+          "count": 2296
+        },
+        "WCRIMUS2": {
+          "end": "2026-09-25",
+          "last_value": "5698",
+          "count": 1489
+        },
+        "WCREXUS2": {
+          "end": "2026-09-25",
+          "last_value": "3570",
+          "count": 1746
+        },
+        "WPULEUS3": {
+          "end": "2026-09-25",
+          "last_value": "92.5",
+          "count": 1860
+        },
+        "WGFUPUS2": {
+          "end": "2026-09-25",
+          "last_value": "8689",
+          "count": 1859
+        },
+        "DTWEXBGS": {
+          "end": "2026-10-02",
+          "last_value": "121.3848",
+          "count": 5203
+        },
+        "DGS10": {
+          "end": "2026-10-05",
+          "last_value": "5.31",
+          "count": 16175
+        },
+        "DGS2": {
+          "end": "2026-10-05",
+          "last_value": "4.84",
+          "count": 12583
+        },
+        "CFTC_CL": {
+          "end": "2026-09-29",
+          "last_value": "122916",
+          "count": 874
+        },
+        "CFTC_BRENT": {
+          "end": "2026-09-29",
+          "last_value": "3571",
+          "count": 770
+        },
+        "CL1_MINUS_CL4": {
+          "end": "2024-04-05",
+          "last_value": "2.67",
+          "count": 9449
+        },
+        "DGS10_MINUS_DGS2": {
+          "end": "2026-10-05",
+          "last_value": "0.47",
+          "count": 12583
+        },
+        "CRACK_321": {
+          "end": "2024-04-05",
+          "last_value": "30.004",
+          "count": 4532
+        },
+        "INV_SURPRISE": {
+          "end": "2026-09-25",
+          "last_value": "698.076923077",
+          "count": 2239
+        },
+        "CUSHING_COVER": {
+          "end": "2026-09-25",
+          "last_value": "1.49480224",
+          "count": 1089
+        },
+        "CURVE_Z": {
+          "end": "2024-04-05",
+          "last_value": "1.52005774",
+          "count": 9449
+        },
+        "COT_Z": {
+          "end": "2026-09-29",
+          "last_value": "-1.693210604",
+          "count": 874
+        },
+        "COT_PCT": {
+          "end": "2026-09-29",
+          "last_value": "4.980842912",
+          "count": 874
+        },
+        "CRACK_GAP": {
+          "end": "2024-04-05",
+          "last_value": "13.265",
+          "count": 4532
+        },
+        "RV20": {
+          "end": "2026-09-29",
+          "last_value": "0.821029835",
+          "count": 9432
+        },
+        "SEAS_STOCK": {
+          "end": "2026-09-25",
+          "last_value": "103424.35625",
+          "count": 2296
+        },
+        "UTIL_DEV": {
+          "end": "2026-09-25",
+          "last_value": "2.1",
+          "count": 1860
+        },
+        "SPR_FLOW": {
+          "end": "2026-09-25",
+          "last_value": "-785",
+          "count": 2291
+        }
+      }
+    }
+  ]
+}

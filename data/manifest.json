@@ -1,0 +1,415 @@
+{
+  "retrieved_at": "2026-10-07T10:00:55+00:00",
+  "series": [
+    {
+      "id": "RWTC",
+      "count": 9512,
+      "start": "1986-01-02",
+      "end": "2026-09-29",
+      "last_value": "96.16",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "RBRTE",
+      "count": 9097,
+      "start": "1987-05-20",
+      "end": "2026-09-29",
+      "last_value": "113.96",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "RCLC1",
+      "count": 10183,
+      "start": "1983-04-04",
+      "end": "2024-04-05",
+      "last_value": "86.91",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "RCLC2",
+      "count": 9594,
+      "start": "1985-01-02",
+      "end": "2024-04-05",
+      "last_value": "86.1",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "RCLC3",
+      "count": 10219,
+      "start": "1983-03-30",
+      "end": "2024-04-05",
+      "last_value": "85.2",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "RCLC4",
+      "count": 9551,
+      "start": "1985-01-02",
+      "end": "2024-04-05",
+      "last_value": "84.24",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "HO_F1",
+      "count": 9894,
+      "start": "1980-01-02",
+      "end": "2024-04-05",
+      "last_value": "2.773",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "RBOB_F1",
+      "count": 4609,
+      "start": "2005-10-03",
+      "end": "2024-04-05",
+      "last_value": "2.789",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "HO_SPOT",
+      "count": 8795,
+      "start": "1986-06-02",
+      "end": "2026-09-29",
+      "last_value": "4.789",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "GAS_SPOT",
+      "count": 9146,
+      "start": "1986-06-02",
+      "end": "2026-09-29",
+      "last_value": "3.329",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WCESTUS1",
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "427320",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WCRSTUS1",
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "711087",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "CUSHING",
+      "count": 1089,
+      "start": "2004-04-16",
+      "end": "2026-09-25",
+      "last_value": "24301",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WCSSTUS1",
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "283767",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WDISTUS1",
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "105180",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WGTSTUS1",
+      "count": 1917,
+      "start": "1990-01-05",
+      "end": "2026-09-25",
+      "last_value": "204362",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WGIRIUS2",
+      "count": 1915,
+      "start": "1990-01-05",
+      "end": "2026-09-25",
+      "last_value": "16670",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WCRFPUS2",
+      "count": 2279,
+      "start": "1983-01-07",
+      "end": "2026-09-25",
+      "last_value": "13955",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WCRRIUS2",
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "16257",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WCRIMUS2",
+      "count": 1489,
+      "start": "1990-01-05",
+      "end": "2026-09-25",
+      "last_value": "5698",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WCREXUS2",
+      "count": 1746,
+      "start": "1991-02-08",
+      "end": "2026-09-25",
+      "last_value": "3570",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WPULEUS3",
+      "count": 1860,
+      "start": "1990-11-02",
+      "end": "2026-09-25",
+      "last_value": "92.5",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "WGFUPUS2",
+      "count": 1859,
+      "start": "1991-02-08",
+      "end": "2026-09-25",
+      "last_value": "8689",
+      "last_field": "value",
+      "source": "EIA",
+      "derived": false
+    },
+    {
+      "id": "DTWEXBGS",
+      "count": 5203,
+      "start": "2006-01-02",
+      "end": "2026-10-02",
+      "last_value": "121.3848",
+      "last_field": "value",
+      "source": "FRED",
+      "derived": false
+    },
+    {
+      "id": "DGS10",
+      "count": 16175,
+      "start": "1962-01-02",
+      "end": "2026-10-05",
+      "last_value": "5.31",
+      "last_field": "value",
+      "source": "FRED",
+      "derived": false
+    },
+    {
+      "id": "DGS2",
+      "count": 12583,
+      "start": "1976-06-01",
+      "end": "2026-10-05",
+      "last_value": "4.84",
+      "last_field": "value",
+      "source": "FRED",
+      "derived": false
+    },
+    {
+      "id": "CFTC_CL",
+      "count": 874,
+      "start": "2010-01-05",
+      "end": "2026-09-29",
+      "last_value": "122916",
+      "last_field": "mm_net",
+      "source": "CFTC",
+      "derived": false
+    },
+    {
+      "id": "CFTC_BRENT",
+      "count": 770,
+      "start": "2011-10-18",
+      "end": "2026-09-29",
+      "last_value": "3571",
+      "last_field": "mm_net",
+      "source": "CFTC",
+      "derived": false
+    },
+    {
+      "id": "CL1_MINUS_CL4",
+      "count": 9449,
+      "start": "1985-01-02",
+      "end": "2024-04-05",
+      "last_value": "2.67",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "DGS10_MINUS_DGS2",
+      "count": 12583,
+      "start": "1976-06-01",
+      "end": "2026-10-05",
+      "last_value": "0.47",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "CRACK_321",
+      "count": 4532,
+      "start": "2005-10-03",
+      "end": "2024-04-05",
+      "last_value": "30.004",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "INV_SURPRISE",
+      "count": 2239,
+      "start": "1983-11-04",
+      "end": "2026-09-25",
+      "last_value": "698.076923077",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "CUSHING_COVER",
+      "count": 1089,
+      "start": "2004-04-16",
+      "end": "2026-09-25",
+      "last_value": "1.49480224",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "CURVE_Z",
+      "count": 9449,
+      "start": "1985-01-02",
+      "end": "2024-04-05",
+      "last_value": "1.52005774",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "COT_Z",
+      "count": 874,
+      "start": "2010-01-05",
+      "end": "2026-09-29",
+      "last_value": "-1.693210604",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "COT_PCT",
+      "count": 874,
+      "start": "2010-01-05",
+      "end": "2026-09-29",
+      "last_value": "4.980842912",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "CRACK_GAP",
+      "count": 4532,
+      "start": "2005-10-03",
+      "end": "2024-04-05",
+      "last_value": "13.265",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "RV20",
+      "count": 9432,
+      "start": "1986-01-30",
+      "end": "2026-09-29",
+      "last_value": "0.821029835",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "SEAS_STOCK",
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "103424.35625",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "UTIL_DEV",
+      "count": 1860,
+      "start": "1990-11-02",
+      "end": "2026-09-25",
+      "last_value": "2.1",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    },
+    {
+      "id": "SPR_FLOW",
+      "count": 2291,
+      "start": "1982-08-27",
+      "end": "2026-09-25",
+      "last_value": "-785",
+      "last_field": "value",
+      "source": "Derived",
+      "derived": true
+    }
+  ]
+}

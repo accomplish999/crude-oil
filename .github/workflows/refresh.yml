@@ -1,0 +1,98 @@
+name: refresh
+
+on:
+  schedule:
+    # Weekday catch-all, 11:15 UTC.
+    - cron: "15 11 * * 1-5"
+    # EIA weekly petroleum status, 10:30 America/New_York. Both daylight and standard time.
+    - cron: "30 14 * * 3"
+    - cron: "30 15 * * 3"
+    # CFTC commitments, 15:30 America/New_York on Friday. Both daylight and standard time.
+    - cron: "30 19 * * 5"
+    - cron: "30 20 * * 5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: pip install -r requirements.txt
+      - run: python scripts/ingest.py
+      - name: Validate against the source files
+        run: python scripts/verify.py
+      - run: python scripts/studies.py
+      - run: python scripts/books.py
+      - run: python scripts/notebooks.py
+      - run: python scripts/datasets.py
+      - run: python scripts/changelog.py
+      - run: python -m unittest scripts/test_logic.py scripts/test_publish.py
+      - name: Commit snapshot
+        run: |
+          git config user.name "crude-oil"
+          git config user.email "crude-oil@users.noreply.github.com"
+          git add data notebooks public/downloads public/notebooks CHANGELOG.md
+          if git diff --cached --quiet; then
+            echo "No data change."
+          else
+            git commit -m "Refresh the crude oil snapshot."
+            git push
+          fi
+      - name: Redeploy
+        env:
+          HOOK: ${{ secrets.VERCEL_DEPLOY_HOOK }}
+        run: |
+          if [ -n "$HOOK" ]; then
+            curl -fsS -X POST "$HOOK"
+          else
+            echo "No VERCEL_DEPLOY_HOOK. A push to main redeploys when the GitHub integration is connected."
+          fi
+
+  alert:
+    needs: refresh
+    if: failure()
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: |
+            const title = "Data refresh failed";
+            const body = [
+              "The scheduled refresh did not publish.",
+              "Validation or the fetch failed, so the snapshot on main was left as it was.",
+              "The Actions log for this run has the error.",
+              "",
+              process.env.GITHUB_SERVER_URL + "/" + process.env.GITHUB_REPOSITORY + "/actions/runs/" + process.env.GITHUB_RUN_ID,
+            ].join("\n");
+            const existing = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+            });
+            const found = existing.data.find((issue) => issue.title === title);
+            if (found) {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: found.number,
+                body,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body,
+              });
+            }

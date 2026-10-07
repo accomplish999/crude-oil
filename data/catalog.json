@@ -1,0 +1,1434 @@
+{
+  "retrieved_at": "2026-10-07T10:00:55+00:00",
+  "series": [
+    {
+      "id": "RWTC",
+      "name": "Cushing, OK WTI Spot Price FOB (Dollars per Barrel)",
+      "unit": "dollars per barrel",
+      "frequency": "daily",
+      "group": "price",
+      "source": "EIA",
+      "source_key": "RWTC",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RWTC&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/RWTCd.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Cushing, OK WTI Spot Price FOB (Dollars per Barrel)",
+          "unit": "dollars per barrel",
+          "derived": false
+        }
+      ],
+      "count": 9512,
+      "start": "1986-01-02",
+      "end": "2026-09-29",
+      "last_value": "96.16",
+      "last_field": "value"
+    },
+    {
+      "id": "RBRTE",
+      "name": "Europe Brent Spot Price FOB (Dollars per Barrel)",
+      "unit": "dollars per barrel",
+      "frequency": "daily",
+      "group": "price",
+      "source": "EIA",
+      "source_key": "RBRTE",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RBRTE&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/RBRTEd.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Europe Brent Spot Price FOB (Dollars per Barrel)",
+          "unit": "dollars per barrel",
+          "derived": false
+        }
+      ],
+      "count": 9097,
+      "start": "1987-05-20",
+      "end": "2026-09-29",
+      "last_value": "113.96",
+      "last_field": "value"
+    },
+    {
+      "id": "RCLC1",
+      "name": "Cushing, OK Crude Oil Future Contract 1 (Dollars per Barrel)",
+      "unit": "dollars per barrel",
+      "frequency": "daily",
+      "group": "curve",
+      "source": "EIA",
+      "source_key": "RCLC1",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RCLC1&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/RCLC1d.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Cushing, OK Crude Oil Future Contract 1 (Dollars per Barrel)",
+          "unit": "dollars per barrel",
+          "derived": false
+        }
+      ],
+      "count": 10183,
+      "start": "1983-04-04",
+      "end": "2024-04-05",
+      "last_value": "86.91",
+      "last_field": "value"
+    },
+    {
+      "id": "RCLC2",
+      "name": "Cushing, OK Crude Oil Future Contract 2 (Dollars per Barrel)",
+      "unit": "dollars per barrel",
+      "frequency": "daily",
+      "group": "curve",
+      "source": "EIA",
+      "source_key": "RCLC2",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RCLC2&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/RCLC2d.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Cushing, OK Crude Oil Future Contract 2 (Dollars per Barrel)",
+          "unit": "dollars per barrel",
+          "derived": false
+        }
+      ],
+      "count": 9594,
+      "start": "1985-01-02",
+      "end": "2024-04-05",
+      "last_value": "86.1",
+      "last_field": "value"
+    },
+    {
+      "id": "RCLC3",
+      "name": "Cushing, OK Crude Oil Future Contract 3 (Dollars per Barrel)",
+      "unit": "dollars per barrel",
+      "frequency": "daily",
+      "group": "curve",
+      "source": "EIA",
+      "source_key": "RCLC3",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RCLC3&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/RCLC3d.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Cushing, OK Crude Oil Future Contract 3 (Dollars per Barrel)",
+          "unit": "dollars per barrel",
+          "derived": false
+        }
+      ],
+      "count": 10219,
+      "start": "1983-03-30",
+      "end": "2024-04-05",
+      "last_value": "85.2",
+      "last_field": "value"
+    },
+    {
+      "id": "RCLC4",
+      "name": "Cushing, OK Crude Oil Future Contract 4 (Dollars per Barrel)",
+      "unit": "dollars per barrel",
+      "frequency": "daily",
+      "group": "curve",
+      "source": "EIA",
+      "source_key": "RCLC4",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=RCLC4&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/RCLC4d.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Cushing, OK Crude Oil Future Contract 4 (Dollars per Barrel)",
+          "unit": "dollars per barrel",
+          "derived": false
+        }
+      ],
+      "count": 9551,
+      "start": "1985-01-02",
+      "end": "2024-04-05",
+      "last_value": "84.24",
+      "last_field": "value"
+    },
+    {
+      "id": "HO_F1",
+      "name": "New York Harbor No. 2 Heating Oil Future Contract 1 (Dollars per Gallon)",
+      "unit": "dollars per gallon",
+      "frequency": "daily",
+      "group": "crack",
+      "source": "EIA",
+      "source_key": "EER_EPD2F_PE1_Y35NY_DPG",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EER_EPD2F_PE1_Y35NY_DPG&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPD2F_PE1_Y35NY_DPGd.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "New York Harbor No. 2 Heating Oil Future Contract 1 (Dollars per Gallon)",
+          "unit": "dollars per gallon",
+          "derived": false
+        }
+      ],
+      "count": 9894,
+      "start": "1980-01-02",
+      "end": "2024-04-05",
+      "last_value": "2.773",
+      "last_field": "value"
+    },
+    {
+      "id": "RBOB_F1",
+      "name": "New York Harbor Reformulated RBOB Regular Gasoline Future Contract 1 (Dollars per Gallon)",
+      "unit": "dollars per gallon",
+      "frequency": "daily",
+      "group": "crack",
+      "source": "EIA",
+      "source_key": "EER_EPMRR_PE1_Y35NY_DPG",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EER_EPMRR_PE1_Y35NY_DPG&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPMRR_PE1_Y35NY_DPGd.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "New York Harbor Reformulated RBOB Regular Gasoline Future Contract 1 (Dollars per Gallon)",
+          "unit": "dollars per gallon",
+          "derived": false
+        }
+      ],
+      "count": 4609,
+      "start": "2005-10-03",
+      "end": "2024-04-05",
+      "last_value": "2.789",
+      "last_field": "value"
+    },
+    {
+      "id": "HO_SPOT",
+      "name": "New York Harbor No. 2 Heating Oil Spot Price FOB (Dollars per Gallon)",
+      "unit": "dollars per gallon",
+      "frequency": "daily",
+      "group": "crack",
+      "source": "EIA",
+      "source_key": "EER_EPD2F_PF4_Y35NY_DPG",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EER_EPD2F_PF4_Y35NY_DPG&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPD2F_PF4_Y35NY_DPGd.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "New York Harbor No. 2 Heating Oil Spot Price FOB (Dollars per Gallon)",
+          "unit": "dollars per gallon",
+          "derived": false
+        }
+      ],
+      "count": 8795,
+      "start": "1986-06-02",
+      "end": "2026-09-29",
+      "last_value": "4.789",
+      "last_field": "value"
+    },
+    {
+      "id": "GAS_SPOT",
+      "name": "New York Harbor Conventional Gasoline Regular Spot Price FOB (Dollars per Gallon)",
+      "unit": "dollars per gallon",
+      "frequency": "daily",
+      "group": "crack",
+      "source": "EIA",
+      "source_key": "EER_EPMRU_PF4_Y35NY_DPG",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=EER_EPMRU_PF4_Y35NY_DPG&f=D",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/EER_EPMRU_PF4_Y35NY_DPGd.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "New York Harbor Conventional Gasoline Regular Spot Price FOB (Dollars per Gallon)",
+          "unit": "dollars per gallon",
+          "derived": false
+        }
+      ],
+      "count": 9146,
+      "start": "1986-06-02",
+      "end": "2026-09-29",
+      "last_value": "3.329",
+      "last_field": "value"
+    },
+    {
+      "id": "WCESTUS1",
+      "name": "Weekly U.S. Ending Stocks excluding SPR of Crude Oil  (Thousand Barrels)",
+      "unit": "thousand barrels",
+      "frequency": "weekly",
+      "group": "stocks",
+      "source": "EIA",
+      "source_key": "WCESTUS1",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCESTUS1&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WCESTUS1w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Ending Stocks excluding SPR of Crude Oil  (Thousand Barrels)",
+          "unit": "thousand barrels",
+          "derived": false
+        }
+      ],
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "427320",
+      "last_field": "value"
+    },
+    {
+      "id": "WCRSTUS1",
+      "name": "Weekly U.S. Ending Stocks of Crude Oil  (Thousand Barrels)",
+      "unit": "thousand barrels",
+      "frequency": "weekly",
+      "group": "stocks",
+      "source": "EIA",
+      "source_key": "WCRSTUS1",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRSTUS1&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WCRSTUS1w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Ending Stocks of Crude Oil  (Thousand Barrels)",
+          "unit": "thousand barrels",
+          "derived": false
+        }
+      ],
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "711087",
+      "last_field": "value"
+    },
+    {
+      "id": "CUSHING",
+      "name": "Weekly Cushing, OK Ending Stocks excluding SPR of Crude Oil  (Thousand Barrels)",
+      "unit": "thousand barrels",
+      "frequency": "weekly",
+      "group": "stocks",
+      "source": "EIA",
+      "source_key": "W_EPC0_SAX_YCUOK_MBBL",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=W_EPC0_SAX_YCUOK_MBBL&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/W_EPC0_SAX_YCUOK_MBBLw.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly Cushing, OK Ending Stocks excluding SPR of Crude Oil  (Thousand Barrels)",
+          "unit": "thousand barrels",
+          "derived": false
+        }
+      ],
+      "count": 1089,
+      "start": "2004-04-16",
+      "end": "2026-09-25",
+      "last_value": "24301",
+      "last_field": "value"
+    },
+    {
+      "id": "WCSSTUS1",
+      "name": "Weekly U.S. Ending Stocks of Crude Oil in SPR  (Thousand Barrels)",
+      "unit": "thousand barrels",
+      "frequency": "weekly",
+      "group": "stocks",
+      "source": "EIA",
+      "source_key": "WCSSTUS1",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCSSTUS1&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WCSSTUS1w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Ending Stocks of Crude Oil in SPR  (Thousand Barrels)",
+          "unit": "thousand barrels",
+          "derived": false
+        }
+      ],
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "283767",
+      "last_field": "value"
+    },
+    {
+      "id": "WDISTUS1",
+      "name": "Weekly U.S. Ending Stocks of Distillate Fuel Oil  (Thousand Barrels)",
+      "unit": "thousand barrels",
+      "frequency": "weekly",
+      "group": "stocks",
+      "source": "EIA",
+      "source_key": "WDISTUS1",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WDISTUS1&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WDISTUS1w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Ending Stocks of Distillate Fuel Oil  (Thousand Barrels)",
+          "unit": "thousand barrels",
+          "derived": false
+        }
+      ],
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "105180",
+      "last_field": "value"
+    },
+    {
+      "id": "WGTSTUS1",
+      "name": "Weekly U.S. Ending Stocks of Total Gasoline  (Thousand Barrels)",
+      "unit": "thousand barrels",
+      "frequency": "weekly",
+      "group": "stocks",
+      "source": "EIA",
+      "source_key": "WGTSTUS1",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGTSTUS1&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WGTSTUS1w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Ending Stocks of Total Gasoline  (Thousand Barrels)",
+          "unit": "thousand barrels",
+          "derived": false
+        }
+      ],
+      "count": 1917,
+      "start": "1990-01-05",
+      "end": "2026-09-25",
+      "last_value": "204362",
+      "last_field": "value"
+    },
+    {
+      "id": "WGIRIUS2",
+      "name": "Weekly U.S. Gross Inputs into Refineries  (Thousand Barrels per Day)",
+      "unit": "thousand barrels per day",
+      "frequency": "weekly",
+      "group": "stocks",
+      "source": "EIA",
+      "source_key": "WGIRIUS2",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGIRIUS2&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WGIRIUS2w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Gross Inputs into Refineries  (Thousand Barrels per Day)",
+          "unit": "thousand barrels per day",
+          "derived": false
+        }
+      ],
+      "count": 1915,
+      "start": "1990-01-05",
+      "end": "2026-09-25",
+      "last_value": "16670",
+      "last_field": "value"
+    },
+    {
+      "id": "WCRFPUS2",
+      "name": "Weekly U.S. Field Production of Crude Oil  (Thousand Barrels per Day)",
+      "unit": "thousand barrels per day",
+      "frequency": "weekly",
+      "group": "balance",
+      "source": "EIA",
+      "source_key": "WCRFPUS2",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRFPUS2&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WCRFPUS2w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Field Production of Crude Oil  (Thousand Barrels per Day)",
+          "unit": "thousand barrels per day",
+          "derived": false
+        }
+      ],
+      "count": 2279,
+      "start": "1983-01-07",
+      "end": "2026-09-25",
+      "last_value": "13955",
+      "last_field": "value"
+    },
+    {
+      "id": "WCRRIUS2",
+      "name": "Weekly U.S. Refiner Net Input of Crude Oil  (Thousand Barrels per Day)",
+      "unit": "thousand barrels per day",
+      "frequency": "weekly",
+      "group": "balance",
+      "source": "EIA",
+      "source_key": "WCRRIUS2",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRRIUS2&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WCRRIUS2w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Refiner Net Input of Crude Oil  (Thousand Barrels per Day)",
+          "unit": "thousand barrels per day",
+          "derived": false
+        }
+      ],
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "16257",
+      "last_field": "value"
+    },
+    {
+      "id": "WCRIMUS2",
+      "name": "Weekly U.S. Imports of Crude Oil  (Thousand Barrels per Day)",
+      "unit": "thousand barrels per day",
+      "frequency": "weekly",
+      "group": "balance",
+      "source": "EIA",
+      "source_key": "WCRIMUS2",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCRIMUS2&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WCRIMUS2w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Imports of Crude Oil  (Thousand Barrels per Day)",
+          "unit": "thousand barrels per day",
+          "derived": false
+        }
+      ],
+      "count": 1489,
+      "start": "1990-01-05",
+      "end": "2026-09-25",
+      "last_value": "5698",
+      "last_field": "value"
+    },
+    {
+      "id": "WCREXUS2",
+      "name": "Weekly U.S. Exports of Crude Oil  (Thousand Barrels per Day)",
+      "unit": "thousand barrels per day",
+      "frequency": "weekly",
+      "group": "balance",
+      "source": "EIA",
+      "source_key": "WCREXUS2",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WCREXUS2&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WCREXUS2w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Exports of Crude Oil  (Thousand Barrels per Day)",
+          "unit": "thousand barrels per day",
+          "derived": false
+        }
+      ],
+      "count": 1746,
+      "start": "1991-02-08",
+      "end": "2026-09-25",
+      "last_value": "3570",
+      "last_field": "value"
+    },
+    {
+      "id": "WPULEUS3",
+      "name": "Weekly U.S. Percent Utilization of Refinery Operable Capacity (Percent)",
+      "unit": "percent",
+      "frequency": "weekly",
+      "group": "balance",
+      "source": "EIA",
+      "source_key": "WPULEUS3",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WPULEUS3&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WPULEUS3w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Percent Utilization of Refinery Operable Capacity (Percent)",
+          "unit": "percent",
+          "derived": false
+        }
+      ],
+      "count": 1860,
+      "start": "1990-11-02",
+      "end": "2026-09-25",
+      "last_value": "92.5",
+      "last_field": "value"
+    },
+    {
+      "id": "WGFUPUS2",
+      "name": "Weekly U.S. Product Supplied of Finished Motor Gasoline  (Thousand Barrels per Day)",
+      "unit": "thousand barrels per day",
+      "frequency": "weekly",
+      "group": "balance",
+      "source": "EIA",
+      "source_key": "WGFUPUS2",
+      "source_url": "https://www.eia.gov/dnav/pet/hist/LeafHandler.ashx?n=PET&s=WGFUPUS2&f=W",
+      "download_url": "https://www.eia.gov/dnav/pet/hist_xls/WGFUPUS2w.xls",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Weekly U.S. Product Supplied of Finished Motor Gasoline  (Thousand Barrels per Day)",
+          "unit": "thousand barrels per day",
+          "derived": false
+        }
+      ],
+      "count": 1859,
+      "start": "1991-02-08",
+      "end": "2026-09-25",
+      "last_value": "8689",
+      "last_field": "value"
+    },
+    {
+      "id": "DTWEXBGS",
+      "name": "Nominal Broad US Dollar Index",
+      "unit": "index, Jan 2006=100",
+      "frequency": "daily",
+      "group": "macro",
+      "source": "FRED",
+      "source_key": "DTWEXBGS",
+      "source_url": "https://fred.stlouisfed.org/series/DTWEXBGS",
+      "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DTWEXBGS",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Nominal Broad US Dollar Index",
+          "unit": "index, Jan 2006=100",
+          "derived": false
+        }
+      ],
+      "count": 5203,
+      "start": "2006-01-02",
+      "end": "2026-10-02",
+      "last_value": "121.3848",
+      "last_field": "value"
+    },
+    {
+      "id": "DGS10",
+      "name": "Market Yield on US Treasury Securities at 10-Year Constant Maturity",
+      "unit": "percent",
+      "frequency": "daily",
+      "group": "macro",
+      "source": "FRED",
+      "source_key": "DGS10",
+      "source_url": "https://fred.stlouisfed.org/series/DGS10",
+      "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS10",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Market Yield on US Treasury Securities at 10-Year Constant Maturity",
+          "unit": "percent",
+          "derived": false
+        }
+      ],
+      "count": 16175,
+      "start": "1962-01-02",
+      "end": "2026-10-05",
+      "last_value": "5.31",
+      "last_field": "value"
+    },
+    {
+      "id": "DGS2",
+      "name": "Market Yield on US Treasury Securities at 2-Year Constant Maturity",
+      "unit": "percent",
+      "frequency": "daily",
+      "group": "macro",
+      "source": "FRED",
+      "source_key": "DGS2",
+      "source_url": "https://fred.stlouisfed.org/series/DGS2",
+      "download_url": "https://fred.stlouisfed.org/graph/fredgraph.csv?id=DGS2",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": false,
+      "method": "",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Market Yield on US Treasury Securities at 2-Year Constant Maturity",
+          "unit": "percent",
+          "derived": false
+        }
+      ],
+      "count": 12583,
+      "start": "1976-06-01",
+      "end": "2026-10-05",
+      "last_value": "4.84",
+      "last_field": "value"
+    },
+    {
+      "id": "CFTC_CL",
+      "name": "WTI-PHYSICAL, NYMEX, CFTC disaggregated futures",
+      "unit": "contracts",
+      "frequency": "weekly",
+      "group": "positioning",
+      "source": "CFTC",
+      "source_key": "067651",
+      "source_url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm",
+      "download_url": "https://www.cftc.gov/dea/newcot/c_disagg.txt",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "2026-09-29",
+      "derived": false,
+      "method": "Filtered disaggregated futures-only report by CFTC contract market code. Managed money net is long minus short and does not include spreads.",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "open_interest",
+          "name": "Open interest",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "prod_long",
+          "name": "Producer long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "prod_short",
+          "name": "Producer short",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "swap_long",
+          "name": "Swap dealer long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "swap_short",
+          "name": "Swap dealer short",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "swap_spread",
+          "name": "Swap dealer spread",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "mm_long",
+          "name": "Managed money long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "mm_short",
+          "name": "Managed money short",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "mm_spread",
+          "name": "Managed money spread",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "mm_net",
+          "name": "Managed money net (long minus short)",
+          "unit": "contracts",
+          "derived": true
+        },
+        {
+          "key": "mm_net_oi",
+          "name": "Managed money net divided by open interest",
+          "unit": "share of open interest",
+          "derived": true
+        },
+        {
+          "key": "other_long",
+          "name": "Other reportable long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "other_short",
+          "name": "Other reportable short",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "nonrept_long",
+          "name": "Nonreportable long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "nonrept_short",
+          "name": "Nonreportable short",
+          "unit": "contracts",
+          "derived": false
+        }
+      ],
+      "count": 874,
+      "start": "2010-01-05",
+      "end": "2026-09-29",
+      "last_value": "122916",
+      "last_field": "mm_net"
+    },
+    {
+      "id": "CFTC_BRENT",
+      "name": "Brent last day, NYMEX, CFTC disaggregated futures",
+      "unit": "contracts",
+      "frequency": "weekly",
+      "group": "positioning",
+      "source": "CFTC",
+      "source_key": "06765T",
+      "source_url": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm",
+      "download_url": "https://www.cftc.gov/dea/newcot/c_disagg.txt",
+      "license": "US government public domain",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "2026-09-29",
+      "derived": false,
+      "method": "Filtered disaggregated futures-only report by CFTC contract market code. Managed money net is long minus short and does not include spreads.",
+      "inputs": [],
+      "fields": [
+        {
+          "key": "open_interest",
+          "name": "Open interest",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "prod_long",
+          "name": "Producer long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "prod_short",
+          "name": "Producer short",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "swap_long",
+          "name": "Swap dealer long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "swap_short",
+          "name": "Swap dealer short",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "swap_spread",
+          "name": "Swap dealer spread",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "mm_long",
+          "name": "Managed money long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "mm_short",
+          "name": "Managed money short",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "mm_spread",
+          "name": "Managed money spread",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "mm_net",
+          "name": "Managed money net (long minus short)",
+          "unit": "contracts",
+          "derived": true
+        },
+        {
+          "key": "mm_net_oi",
+          "name": "Managed money net divided by open interest",
+          "unit": "share of open interest",
+          "derived": true
+        },
+        {
+          "key": "other_long",
+          "name": "Other reportable long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "other_short",
+          "name": "Other reportable short",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "nonrept_long",
+          "name": "Nonreportable long",
+          "unit": "contracts",
+          "derived": false
+        },
+        {
+          "key": "nonrept_short",
+          "name": "Nonreportable short",
+          "unit": "contracts",
+          "derived": false
+        }
+      ],
+      "count": 770,
+      "start": "2011-10-18",
+      "end": "2026-09-29",
+      "last_value": "3571",
+      "last_field": "mm_net"
+    },
+    {
+      "id": "CL1_MINUS_CL4",
+      "name": "NYMEX crude contract 1 minus contract 4",
+      "unit": "dollars per barrel",
+      "frequency": "daily",
+      "group": "curve",
+      "source": "Derived",
+      "source_key": "CL1_MINUS_CL4",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": true,
+      "method": "RCLC1 minus RCLC4 on dates both contracts print. Positive means the front is above the fourth.",
+      "inputs": [
+        "RCLC1",
+        "RCLC4"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "NYMEX crude contract 1 minus contract 4",
+          "unit": "dollars per barrel",
+          "derived": true
+        }
+      ],
+      "count": 9449,
+      "start": "1985-01-02",
+      "end": "2024-04-05",
+      "last_value": "2.67",
+      "last_field": "value"
+    },
+    {
+      "id": "DGS10_MINUS_DGS2",
+      "name": "10-year Treasury yield minus 2-year Treasury yield",
+      "unit": "percentage points",
+      "frequency": "daily",
+      "group": "macro",
+      "source": "Derived",
+      "source_key": "DGS10_MINUS_DGS2",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "DGS10 minus DGS2 on dates both yields print.",
+      "inputs": [
+        "DGS10",
+        "DGS2"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "10-year Treasury yield minus 2-year Treasury yield",
+          "unit": "percentage points",
+          "derived": true
+        }
+      ],
+      "count": 12583,
+      "start": "1976-06-01",
+      "end": "2026-10-05",
+      "last_value": "0.47",
+      "last_field": "value"
+    },
+    {
+      "id": "CRACK_321",
+      "name": "3-2-1 crack: ((2 * RBOB_F1 + HO_F1) / 3) * 42 - RCLC1",
+      "unit": "dollars per barrel",
+      "frequency": "daily",
+      "group": "crack",
+      "source": "Derived",
+      "source_key": "CRACK_321",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "9/30/2026",
+      "derived": true,
+      "method": "RBOB and heating oil futures are dollars per gallon. Times 42 converts the average gallon quote to a barrel quote, then subtracts NYMEX crude contract 1. Dates missing any input are omitted.",
+      "inputs": [
+        "RBOB_F1",
+        "HO_F1",
+        "RCLC1"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "3-2-1 crack",
+          "unit": "dollars per barrel",
+          "derived": true
+        }
+      ],
+      "count": 4532,
+      "start": "2005-10-03",
+      "end": "2024-04-05",
+      "last_value": "30.004",
+      "last_field": "value"
+    },
+    {
+      "id": "INV_SURPRISE",
+      "name": "Commercial crude surprise versus the prior 52-week mean change",
+      "unit": "thousand barrels",
+      "frequency": "weekly",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "INV_SURPRISE",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "Weekly change in EIA WCESTUS1, kept only when the week-ending dates are 7 days apart, minus the mean of the prior 52 kept changes. The mean uses weeks strictly before the current week. This is a trailing baseline, not an analyst survey.",
+      "inputs": [
+        "WCESTUS1"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Commercial crude surprise versus the prior 52-week mean change",
+          "unit": "thousand barrels",
+          "derived": true
+        }
+      ],
+      "count": 2239,
+      "start": "1983-11-04",
+      "end": "2026-09-25",
+      "last_value": "698.076923077",
+      "last_field": "value"
+    },
+    {
+      "id": "CUSHING_COVER",
+      "name": "Cushing days of cover",
+      "unit": "days",
+      "frequency": "weekly",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "CUSHING_COVER",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "Cushing crude stocks (thousand barrels) divided by US refiner net inputs of crude (thousand barrels per day) on the same Friday. The result is days. Low cover is a print below the train 20th percentile, frozen at 1.403 days.",
+      "inputs": [
+        "CUSHING",
+        "WCRRIUS2"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Cushing days of cover",
+          "unit": "days",
+          "derived": true
+        }
+      ],
+      "count": 1089,
+      "start": "2004-04-16",
+      "end": "2026-09-25",
+      "last_value": "1.49480224",
+      "last_field": "value"
+    },
+    {
+      "id": "CURVE_Z",
+      "name": "Curve z-score, contract 1 minus contract 4",
+      "unit": "z-score",
+      "frequency": "daily",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "CURVE_Z",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "(CL1_MINUS_CL4 minus the train mean) divided by the train population standard deviation. Train mean -0.142 dollars per barrel. Train standard deviation 1.850. Both moments stop at 31 Dec 2019 and are applied to every later print. A positive CL1_MINUS_CL4 means the front NYMEX contract is above the fourth.",
+      "inputs": [
+        "CL1_MINUS_CL4"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Curve z-score, contract 1 minus contract 4",
+          "unit": "z-score",
+          "derived": true
+        }
+      ],
+      "count": 9449,
+      "start": "1985-01-02",
+      "end": "2024-04-05",
+      "last_value": "1.52005774",
+      "last_field": "value"
+    },
+    {
+      "id": "COT_Z",
+      "name": "Managed money z-score, WTI-PHYSICAL",
+      "unit": "z-score",
+      "frequency": "weekly",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "COT_Z",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "Managed-money net divided by open interest on CFTC 067651. Z-score uses the train mean and the train population standard deviation of that ratio. Train mean 0.1146. Train standard deviation 0.0386. The percentile is the share of train ratios at or below the current print. Spreads are not inside the net.",
+      "inputs": [
+        "CFTC_CL"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Managed money z-score, WTI-PHYSICAL",
+          "unit": "z-score",
+          "derived": true
+        }
+      ],
+      "count": 874,
+      "start": "2010-01-05",
+      "end": "2026-09-29",
+      "last_value": "-1.693210604",
+      "last_field": "value"
+    },
+    {
+      "id": "COT_PCT",
+      "name": "Managed money percentile versus the pre-2020 distribution",
+      "unit": "percentile",
+      "frequency": "weekly",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "COT_PCT",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "Share of train mm_net_oi prints at or below the current print, times 100. The train distribution is frozen.",
+      "inputs": [
+        "CFTC_CL"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Managed money percentile versus the pre-2020 distribution",
+          "unit": "percentile",
+          "derived": true
+        }
+      ],
+      "count": 874,
+      "start": "2010-01-05",
+      "end": "2026-09-29",
+      "last_value": "4.980842912",
+      "last_field": "value"
+    },
+    {
+      "id": "CRACK_GAP",
+      "name": "3-2-1 crack minus the pre-2020 median",
+      "unit": "dollars per barrel",
+      "frequency": "daily",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "CRACK_GAP",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "CRACK_321 minus its train median. Train median 16.739 dollars per barrel. CRACK_321 is ((2 * RBOB_F1 + HO_F1) / 3) * 42 minus RCLC1. A date is absent when any input is absent. The futures workbooks end before the spot series.",
+      "inputs": [
+        "CRACK_321"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "3-2-1 crack minus the pre-2020 median",
+          "unit": "dollars per barrel",
+          "derived": true
+        }
+      ],
+      "count": 4532,
+      "start": "2005-10-03",
+      "end": "2024-04-05",
+      "last_value": "13.265",
+      "last_field": "value"
+    },
+    {
+      "id": "RV20",
+      "name": "20-print realized volatility, RWTC",
+      "unit": "annualized log-return standard deviation",
+      "frequency": "daily",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "RV20",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "Population standard deviation of the last 20 adjacent RWTC log returns, times the square root of 252. A return enters only when the two prints are 1 to 5 calendar days apart. High realized vol is at or above the train 80th percentile, frozen at 0.4535. Implied volatility is not in this archive. No implied-versus-realized ratio is computed.",
+      "inputs": [
+        "RWTC"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "20-print realized volatility, RWTC",
+          "unit": "annualized log-return standard deviation",
+          "derived": true
+        }
+      ],
+      "count": 9432,
+      "start": "1986-01-30",
+      "end": "2026-09-29",
+      "last_value": "0.821029835",
+      "last_field": "value"
+    },
+    {
+      "id": "SEAS_STOCK",
+      "name": "Commercial crude stocks minus the pre-2020 month mean",
+      "unit": "thousand barrels",
+      "frequency": "weekly",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "SEAS_STOCK",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "WCESTUS1 level minus the train mean level for that calendar month. Month means are frozen on weeks before 2020. A later January is compared with the pre-2020 January mean, not with a mean that includes itself.",
+      "inputs": [
+        "WCESTUS1"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Commercial crude stocks minus the pre-2020 month mean",
+          "unit": "thousand barrels",
+          "derived": true
+        }
+      ],
+      "count": 2296,
+      "start": "1982-08-20",
+      "end": "2026-09-25",
+      "last_value": "103424.35625",
+      "last_field": "value"
+    },
+    {
+      "id": "UTIL_DEV",
+      "name": "Refinery utilization minus the pre-2020 median",
+      "unit": "percentage points",
+      "frequency": "weekly",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "UTIL_DEV",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "WPULEUS3 minus its train median, in percentage points of utilization. Train median 90.40 percent. An anomaly is an absolute deviation at or above the train 90th percentile of absolute deviations, frozen at 7.10 points.",
+      "inputs": [
+        "WPULEUS3"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "Refinery utilization minus the pre-2020 median",
+          "unit": "percentage points",
+          "derived": true
+        }
+      ],
+      "count": 1860,
+      "start": "1990-11-02",
+      "end": "2026-09-25",
+      "last_value": "2.1",
+      "last_field": "value"
+    },
+    {
+      "id": "SPR_FLOW",
+      "name": "SPR weekly stock change",
+      "unit": "thousand barrels",
+      "frequency": "weekly",
+      "group": "metric",
+      "source": "Derived",
+      "source_key": "SPR_FLOW",
+      "source_url": "",
+      "download_url": "",
+      "license": "Calculated from US government series stored in this archive",
+      "retrieved_at": "2026-10-07T10:00:55+00:00",
+      "release_date": "",
+      "derived": true,
+      "method": "Weekly change in EIA WCSSTUS1, the Strategic Petroleum Reserve, thousand barrels. Kept only when the two week-ending dates are 7 days apart. A negative change is a draw.",
+      "inputs": [
+        "WCSSTUS1"
+      ],
+      "fields": [
+        {
+          "key": "value",
+          "name": "SPR weekly stock change",
+          "unit": "thousand barrels",
+          "derived": true
+        }
+      ],
+      "count": 2291,
+      "start": "1982-08-27",
+      "end": "2026-09-25",
+      "last_value": "-785",
+      "last_field": "value"
+    }
+  ]
+}

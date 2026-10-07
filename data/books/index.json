@@ -1,0 +1,23 @@
+{
+  "books": [
+    {
+      "id": "prices",
+      "name": "Prices",
+      "rows": 16468,
+      "columns": 16
+    },
+    {
+      "id": "weekly",
+      "name": "Weekly",
+      "rows": 2296,
+      "columns": 17
+    },
+    {
+      "id": "positions",
+      "name": "Positions",
+      "rows": 874,
+      "columns": 11
+    }
+  ],
+  "z_rule": "A z cell uses train data through 31 Dec 2019. |z| above 4 matches the anomaly flag on RWTC returns. Blank input, blank z."
+}

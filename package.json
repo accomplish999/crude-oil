@@ -1,0 +1,34 @@
+{
+  "name": "crude-oil",
+  "private": true,
+  "description": "Public crude oil prices, stocks, positioning, and walk-forward studies.",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "check:dashes": "node scripts/check-emdash.mjs",
+    "check:names": "node scripts/check-names.mjs",
+    "check:links": "node scripts/check-links.mjs",
+    "check:guard": "node --test scripts/test-guard.mjs scripts/test-formula.mjs",
+    "check": "npm run check:dashes && npm run check:names && npm run check:guard && npm run lint && npm run build && npm run check:links"
+  },
+  "dependencies": {
+    "hyparquet-writer": "^0.16.10",
+    "next": "^15.5.4",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@types/node": "^22.15.21",
+    "@types/react": "^19.1.6",
+    "@types/react-dom": "^19.1.5",
+    "eslint": "^9.28.0",
+    "eslint-config-next": "^15.5.4",
+    "typescript": "^5.8.3"
+  }
+}

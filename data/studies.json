@@ -1,0 +1,1787 @@
+{
+  "holdout_start": "2020-01-01",
+  "generated_from": "scripts/studies.py",
+  "studies": [
+    {
+      "slug": "seasonality",
+      "index": "01",
+      "title": "Seasonality",
+      "kicker": "Calendar month",
+      "question": "Do WTI's calendar-month mean returns from before 2020 show up again after it?",
+      "verdict": "held",
+      "verdict_line": "Correlation of the 12 train month-means with the 12 holdout month-means is 0.309. Signs match in 5 of 12 months. The correlation is above zero, which was the bar. 5 matching signs out of 12 is a thin map.",
+      "chart": {
+        "type": "bars",
+        "stat": "0.309",
+        "stat_label": "train vs holdout month-mean correlation",
+        "categories": [
+          "01",
+          "02",
+          "03",
+          "04",
+          "05",
+          "06",
+          "07",
+          "08",
+          "09",
+          "10",
+          "11",
+          "12"
+        ],
+        "series": [
+          {
+            "name": "Train mean daily log return",
+            "values": [
+              -0.00042346721505052276,
+              -0.00031776611465524405,
+              0.001704086411549809,
+              0.0019248257451111271,
+              -1.0453121127488492e-05,
+              0.00030006289035662445,
+              7.047468841529976e-05,
+              0.0005850629456426957,
+              0.0003855224184828907,
+              -0.001058457521544037,
+              -0.002012365496825432,
+              -6.92539103486683e-06
+            ]
+          },
+          {
+            "name": "Holdout mean daily log return",
+            "values": [
+              0.0017234374713982657,
+              0.0008136342387022395,
+              -0.0018042977398892174,
+              0.004483608238685603,
+              0.0028474935604595976,
+              0.0004070387718364074,
+              0.0021982192756976127,
+              -0.0016654597608493863,
+              -2.6889570238320464e-05,
+              -0.00038193373262846467,
+              -0.0018458636547298338,
+              0.0013986017338135138
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Mean daily log return of RWTC by calendar month",
+        "columns": [
+          "Month",
+          "Train n",
+          "Train mean",
+          "Holdout n",
+          "Holdout mean",
+          "Sign"
+        ],
+        "rows": [
+          [
+            "01",
+            "638",
+            "-0.042%",
+            "141",
+            "0.172%",
+            "not the same"
+          ],
+          [
+            "02",
+            "603",
+            "-0.032%",
+            "134",
+            "0.081%",
+            "not the same"
+          ],
+          [
+            "03",
+            "676",
+            "0.170%",
+            "154",
+            "-0.180%",
+            "not the same"
+          ],
+          [
+            "04",
+            "625",
+            "0.192%",
+            "143",
+            "0.448%",
+            "same"
+          ],
+          [
+            "05",
+            "633",
+            "-0.001%",
+            "146",
+            "0.285%",
+            "not the same"
+          ],
+          [
+            "06",
+            "655",
+            "0.030%",
+            "146",
+            "0.041%",
+            "same"
+          ],
+          [
+            "07",
+            "638",
+            "0.007%",
+            "149",
+            "0.220%",
+            "same"
+          ],
+          [
+            "08",
+            "707",
+            "0.059%",
+            "153",
+            "-0.167%",
+            "not the same"
+          ],
+          [
+            "09",
+            "634",
+            "0.039%",
+            "144",
+            "-0.003%",
+            "not the same"
+          ],
+          [
+            "10",
+            "677",
+            "-0.106%",
+            "129",
+            "-0.038%",
+            "same"
+          ],
+          [
+            "11",
+            "630",
+            "-0.201%",
+            "117",
+            "-0.185%",
+            "same"
+          ],
+          [
+            "12",
+            "651",
+            "-0.001%",
+            "128",
+            "0.140%",
+            "not the same"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "The question is whether the calendar still matters after the sample that drew the map.",
+            "Series is EIA RWTC, Cushing WTI spot, dollars per barrel. The return is the log change between two published prints at most five calendar days apart. Longer holes are dropped."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "Train prints end 31 Dec 2019. Holdout prints start 1 Jan 2020. Each calendar month gets a mean daily log return in each window.",
+            "The precommitted score is the Pearson correlation of the 12 train means with the 12 holdout means. Above zero, the map repeated. At or below zero, it did not. No month is dropped after the fact."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Correlation of the 12 train month-means with the 12 holdout month-means is 0.309. Signs match in 5 of 12 months. The correlation is above zero, which was the bar. 5 matching signs out of 12 is a thin map.",
+            "Train daily returns used: 7767. Holdout daily returns used: 1684."
+          ]
+        }
+      ],
+      "stats": {
+        "correlation": 0.3091126669071936,
+        "sign_matches": 5
+      }
+    },
+    {
+      "slug": "inventory",
+      "index": "02",
+      "title": "Inventory surprise",
+      "kicker": "Stocks ex-SPR vs the prior 52 weeks",
+      "question": "Does a WCESTUS1 build versus its own prior 52 weeks show up as a lower RWTC print on the nominal EIA Wednesday?",
+      "verdict": "failed",
+      "verdict_line": "Train correlation of surprise with the release-day RWTC log return is -0.099. Holdout correlation is 0.024. The holdout correlation is not negative. The bar was missed.",
+      "chart": {
+        "type": "bars",
+        "stat": "0.024",
+        "stat_label": "holdout correlation, surprise vs release-day return",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "Correlation",
+            "values": [
+              -0.09860094040993433,
+              0.024354886516558958
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "WCESTUS1 surprise versus RWTC release-day log return",
+        "columns": [
+          "Window",
+          "n",
+          "Correlation"
+        ],
+        "rows": [
+          [
+            "Train, release before 2020-01-01",
+            "1584",
+            "-0.099"
+          ],
+          [
+            "Holdout, release on or after 2020-01-01",
+            "348",
+            "0.024"
+          ],
+          [
+            "Skipped, no Wednesday RWTC print",
+            "307",
+            ""
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Stocks are EIA WCESTUS1. The change is this week minus last week, and only when the week-ending dates are seven days apart.",
+            "The baseline is the median change of the prior 52 kept weeks. Surprise is the current change minus that median. It is not an analyst survey."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The EIA week ends Friday. The nominal release is the Wednesday five days later. The price is the log change from the last RWTC print before that Wednesday to the print on that Wednesday. If Wednesday has no print, the week is skipped. Thursday holiday releases are not moved.",
+            "The precommitted sign is negative: a positive surprise (a bigger build, or a smaller draw, than the prior 52 weeks) should come with a negative release-day return. Train and holdout correlations are scored separately. The holdout fails if it is not negative."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train correlation of surprise with the release-day RWTC log return is -0.099. Holdout correlation is 0.024. The holdout correlation is not negative. The bar was missed.",
+            "Usable weeks in train: 1584. Usable weeks in holdout: 348. Weeks skipped because Wednesday had no RWTC print: 307."
+          ]
+        }
+      ],
+      "stats": {
+        "train_correlation": -0.09860094040993433,
+        "holdout_correlation": 0.024354886516558958,
+        "n_train": 1584,
+        "n_holdout": 348,
+        "skipped_release": 307
+      }
+    },
+    {
+      "slug": "term-structure",
+      "index": "03",
+      "title": "Term structure",
+      "kicker": "Contract 1 minus contract 4",
+      "question": "Does the gap between five-print RWTC returns in backwardation and in contango keep its sign after 2019?",
+      "verdict": "held",
+      "verdict_line": "Train mean five-print RWTC return in backwardation minus contango is -0.133%. Holdout difference is -0.055%. A negative gap means backwardation did not pay more than contango. The holdout kept the train sign.",
+      "chart": {
+        "type": "bars",
+        "stat": "-0.055%",
+        "stat_label": "holdout backwardation minus contango, five-print return",
+        "categories": [
+          "Train back",
+          "Train contango",
+          "Holdout back",
+          "Holdout contango"
+        ],
+        "series": [
+          {
+            "name": "Mean five-print log return",
+            "values": [
+              -6.615748865929727e-05,
+              0.001260266098743849,
+              0.0019575499424321708,
+              0.0025054892129020294
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Five-print RWTC log return by the sign of RCLC1 minus RCLC4",
+        "columns": [
+          "Window",
+          "State",
+          "n",
+          "Mean return"
+        ],
+        "rows": [
+          [
+            "Train",
+            "Backwardation (spread > 0)",
+            "3485",
+            "-0.007%"
+          ],
+          [
+            "Train",
+            "Contango (spread < 0)",
+            "3949",
+            "0.126%"
+          ],
+          [
+            "Holdout",
+            "Backwardation (spread > 0)",
+            "717",
+            "0.196%"
+          ],
+          [
+            "Holdout",
+            "Contango (spread < 0)",
+            "349",
+            "0.251%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "The curve in this archive is four EIA series: RCLC1, RCLC2, RCLC3, RCLC4. The spread is contract 1 minus contract 4. Positive means the front is above the fourth.",
+            "RCLC1 in this snapshot last prints on 2024-04-05. That is the last row of EIA's history workbook on the day it was fetched. The series is not extended to the spot date.",
+            "A full exchange board is not in the archive. Exchange quotes are licensed. Four months is what EIA posts for free."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "On each day both the spread and RWTC print, take the log change in RWTC five published prints later. Split the days by the sign of the spread.",
+            "The precommitted score is the mean five-print return in backwardation minus the mean in contango. The holdout uses the same sign rule. It fails if that difference changes sign."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train mean five-print RWTC return in backwardation minus contango is -0.133%. Holdout difference is -0.055%. A negative gap means backwardation did not pay more than contango. The holdout kept the train sign."
+          ]
+        }
+      ],
+      "stats": {
+        "train_diff": -0.0013264235874031463,
+        "holdout_diff": -0.0005479392704698586
+      }
+    },
+    {
+      "slug": "positioning",
+      "index": "04",
+      "title": "COT positioning",
+      "kicker": "Managed money on 067651",
+      "question": "After managed money net on WTI-PHYSICAL is extremely long versus the pre-2020 book, is the next five-print RWTC return higher?",
+      "verdict": "failed",
+      "verdict_line": "The frozen 90th percentile of managed-money net over open interest is 0.1653. Train five-print return above that line minus the return below it is -0.444%. Holdout difference is 1.034%. The holdout flipped the train sign.",
+      "chart": {
+        "type": "bars",
+        "stat": "0.1653",
+        "stat_label": "frozen train 90th percentile, net / open interest",
+        "categories": [
+          "Train extreme",
+          "Train rest",
+          "Holdout extreme",
+          "Holdout rest"
+        ],
+        "series": [
+          {
+            "name": "Mean five-print log return",
+            "values": [
+              -0.004706146961671467,
+              -0.0002695978948235391,
+              0.010233511571199795,
+              -0.00010562764669226644
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Five-print RWTC return after CFTC_CL managed-money net / open interest",
+        "columns": [
+          "Window",
+          "Bucket",
+          "n",
+          "Mean return"
+        ],
+        "rows": [
+          [
+            "Train",
+            "At or above 0.1653",
+            "52",
+            "-0.471%"
+          ],
+          [
+            "Train",
+            "Below the frozen line",
+            "467",
+            "-0.027%"
+          ],
+          [
+            "Holdout",
+            "At or above 0.1653",
+            "16",
+            "1.023%"
+          ],
+          [
+            "Holdout",
+            "Below the frozen line",
+            "335",
+            "-0.011%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Positions are CFTC disaggregated futures, contract market code 067651. The report calls it WTI-PHYSICAL on the New York Mercantile Exchange. Older rows in the same code used a longer name. The code is the join.",
+            "Managed money net is long minus short. Spreads stay in their own column and are not added in. The ratio divides that net by open interest."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The 90th percentile is the nearest rank of the train ratios only. The holdout is cut with that same number.",
+            "The return is five published RWTC prints after the first RWTC print on or within three days after the report date. The precommitted score is the mean return above the line minus the mean return below it. A sign change is a miss."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "The frozen 90th percentile of managed-money net over open interest is 0.1653. Train five-print return above that line minus the return below it is -0.444%. Holdout difference is 1.034%. The holdout flipped the train sign."
+          ]
+        }
+      ],
+      "stats": {
+        "threshold": 0.165296,
+        "train_diff": -0.004436549066847928,
+        "holdout_diff": 0.010339139217892061
+      }
+    },
+    {
+      "slug": "report-day",
+      "index": "05",
+      "title": "EIA report day",
+      "kicker": "Wednesday absolute return",
+      "question": "Is the absolute RWTC move larger on Wednesdays than on other published days, in both windows?",
+      "verdict": "held",
+      "verdict_line": "Train ratio of mean absolute Wednesday log return to other days is 1.059. Holdout ratio is 1.043. Both windows clear 1, which was the bar. The margin is small.",
+      "chart": {
+        "type": "bars",
+        "stat": "1.043",
+        "stat_label": "holdout Wednesday absolute return / other days",
+        "categories": [
+          "Train Wed",
+          "Train other",
+          "Holdout Wed",
+          "Holdout other"
+        ],
+        "series": [
+          {
+            "name": "Mean absolute log return",
+            "values": [
+              0.018519997783414944,
+              0.01749532808513922,
+              0.022092534266403376,
+              0.02118140554777453
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Mean absolute adjacent RWTC log return",
+        "columns": [
+          "Window",
+          "Day",
+          "n",
+          "Mean absolute return"
+        ],
+        "rows": [
+          [
+            "Train",
+            "Wednesday",
+            "1584",
+            "1.852%"
+          ],
+          [
+            "Train",
+            "Other published days",
+            "6183",
+            "1.750%"
+          ],
+          [
+            "Holdout",
+            "Wednesday",
+            "348",
+            "2.209%"
+          ],
+          [
+            "Holdout",
+            "Other published days",
+            "1336",
+            "2.118%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "The nominal Weekly Petroleum Status Report hits on Wednesday at 10:30 Eastern. This study does not have a holiday calendar, so it does not move the label when EIA publishes Thursday.",
+            "A Wednesday here is a published RWTC print whose date falls on Wednesday. The return is the adjacent log change ending that day."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "Compare the mean absolute log return on those Wednesdays with the mean absolute log return on every other published day.",
+            "The precommitted bar is a ratio above 1 in the train window and again in the holdout. One window above 1 is not enough."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train ratio of mean absolute Wednesday log return to other days is 1.059. Holdout ratio is 1.043. Both windows clear 1, which was the bar. The margin is small."
+          ]
+        }
+      ],
+      "stats": {
+        "train_ratio": 1.05856818993558,
+        "holdout_ratio": 1.0430154985028637
+      }
+    },
+    {
+      "slug": "cushing",
+      "index": "06",
+      "title": "Cushing",
+      "kicker": "Cushing stocks vs the prior 52 weeks",
+      "question": "Does a CUSHING build versus its own prior 52 weeks show up as a lower RWTC print on the nominal EIA Wednesday?",
+      "verdict": "failed",
+      "verdict_line": "Train correlation of surprise with the release-day RWTC log return is -0.064. Holdout correlation is 0.151. The holdout correlation is not negative. The bar was missed.",
+      "chart": {
+        "type": "bars",
+        "stat": "0.151",
+        "stat_label": "holdout correlation, surprise vs release-day return",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "Correlation",
+            "values": [
+              -0.06443389646410491,
+              0.1505507828110828
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "CUSHING surprise versus RWTC release-day log return",
+        "columns": [
+          "Window",
+          "n",
+          "Correlation"
+        ],
+        "rows": [
+          [
+            "Train, release before 2020-01-01",
+            "630",
+            "-0.064"
+          ],
+          [
+            "Holdout, release on or after 2020-01-01",
+            "348",
+            "0.151"
+          ],
+          [
+            "Skipped, no Wednesday RWTC print",
+            "22",
+            ""
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Stocks are EIA CUSHING. The change is this week minus last week, and only when the week-ending dates are seven days apart.",
+            "The baseline is the median change of the prior 52 kept weeks. Surprise is the current change minus that median. It is not an analyst survey."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The EIA week ends Friday. The nominal release is the Wednesday five days later. The price is the log change from the last RWTC print before that Wednesday to the print on that Wednesday. If Wednesday has no print, the week is skipped. Thursday holiday releases are not moved.",
+            "The precommitted sign is negative: a positive surprise (a bigger build, or a smaller draw, than the prior 52 weeks) should come with a negative release-day return. Train and holdout correlations are scored separately. The holdout fails if it is not negative."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train correlation of surprise with the release-day RWTC log return is -0.064. Holdout correlation is 0.151. The holdout correlation is not negative. The bar was missed.",
+            "Usable weeks in train: 630. Usable weeks in holdout: 348. Weeks skipped because Wednesday had no RWTC print: 22."
+          ]
+        }
+      ],
+      "stats": {
+        "train_correlation": -0.06443389646410491,
+        "holdout_correlation": 0.1505507828110828,
+        "n_train": 630,
+        "n_holdout": 348,
+        "skipped_release": 22
+      }
+    },
+    {
+      "slug": "crack",
+      "index": "07",
+      "title": "Crack spread",
+      "kicker": "3-2-1 from EIA futures",
+      "question": "Does a richer 3-2-1 crack line up with a higher five-print RWTC return, and does that sign survive 2020?",
+      "verdict": "failed",
+      "verdict_line": "Train correlation of the 3-2-1 crack with the next five-print RWTC return is 0.036. Holdout correlation is -0.030. The holdout flipped the train sign.",
+      "chart": {
+        "type": "bars",
+        "stat": "-0.030",
+        "stat_label": "holdout correlation, crack level vs five-print RWTC return",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "Correlation",
+            "values": [
+              0.03590559489585627,
+              -0.030125119780125467
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "CRACK_321 level versus the next five RWTC prints",
+        "columns": [
+          "Window",
+          "n",
+          "Correlation"
+        ],
+        "rows": [
+          [
+            "Train",
+            "3371",
+            "0.036"
+          ],
+          [
+            "Holdout",
+            "1066",
+            "-0.030"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "The crack is ((2 * RBOB_F1 + HO_F1) / 3) * 42 minus RCLC1. RBOB and heating oil are EIA futures in dollars per gallon. Times 42 puts them on a barrel. Contract 1 crude is dollars per barrel.",
+            "The last crack date in this snapshot is 2024-04-05, which is the last day all three EIA futures print together.",
+            "A date is kept only when all three inputs print. Nothing is filled."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The theory under test is simple: a wide crack pulls refinery demand for crude, so the next RWTC return should be positive when the crack is high. The score is the correlation of the crack level with the five-print RWTC log return.",
+            "The holdout fails if that correlation is not positive."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train correlation of the 3-2-1 crack with the next five-print RWTC return is 0.036. Holdout correlation is -0.030. The holdout flipped the train sign.",
+            "Train days: 3371. Holdout days: 1066."
+          ]
+        }
+      ],
+      "stats": {
+        "train_correlation": 0.03590559489585627,
+        "holdout_correlation": -0.030125119780125467
+      }
+    },
+    {
+      "slug": "events",
+      "index": "08",
+      "title": "Inventory tails",
+      "kicker": "Train deciles, frozen",
+      "question": "Do the outer deciles of the WCESTUS1 surprise, cut on the train window only, still separate five-print RWTC returns after 2019?",
+      "verdict": "held",
+      "verdict_line": "Frozen train tails are -5648 and 5678 thousand barrels. Train draw-minus-build five-print return is -0.348%. Holdout difference is -2.035%. A negative number means the draw tail was followed by a lower return than the build tail. The holdout kept the train sign.",
+      "chart": {
+        "type": "bars",
+        "stat": "-2.035%",
+        "stat_label": "holdout draw minus build, five-print return",
+        "categories": [
+          "Train draw",
+          "Train build",
+          "Holdout draw",
+          "Holdout build"
+        ],
+        "series": [
+          {
+            "name": "Mean five-print log return",
+            "values": [
+              -0.001687281844663164,
+              0.00179248917836928,
+              -0.013771581407886735,
+              0.006577548681078784
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Five-print RWTC return by frozen WCESTUS1 surprise tail",
+        "columns": [
+          "Window",
+          "Tail",
+          "n",
+          "Mean return"
+        ],
+        "rows": [
+          [
+            "Train",
+            "draw",
+            "159",
+            "-0.169%"
+          ],
+          [
+            "Train",
+            "middle",
+            "1266",
+            "0.181%"
+          ],
+          [
+            "Train",
+            "build",
+            "159",
+            "0.179%"
+          ],
+          [
+            "Holdout",
+            "draw",
+            "47",
+            "-1.377%"
+          ],
+          [
+            "Holdout",
+            "middle",
+            "255",
+            "0.319%"
+          ],
+          [
+            "Holdout",
+            "build",
+            "45",
+            "0.658%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "An event here is mechanical. It is not a war, a meeting, or a headline. Those dates are not in a public file this archive can store without editorial selection.",
+            "Surprise is the weekly change in US crude stocks excluding the SPR, minus the median of the prior 52 seven-day changes."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The 10th and 90th percentiles are nearest ranks of the train surprises. Holdout weeks are labeled with those two numbers.",
+            "The return is five published RWTC prints after the nominal Wednesday release. The score is the mean return in the draw tail minus the mean return in the build tail. The holdout fails if that difference changes sign."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Frozen train tails are -5648 and 5678 thousand barrels. Train draw-minus-build five-print return is -0.348%. Holdout difference is -2.035%. A negative number means the draw tail was followed by a lower return than the build tail. The holdout kept the train sign."
+          ]
+        }
+      ],
+      "stats": {
+        "train_diff": -0.003479771023032444,
+        "holdout_diff": -0.02034913008896552,
+        "low": -5647.5,
+        "high": 5677.5
+      }
+    },
+    {
+      "slug": "anomalies",
+      "index": "09",
+      "title": "Anomaly flags",
+      "kicker": "Train median and MAD",
+      "question": "Do RWTC days that sit more than four robust z-scores from the pre-2020 center lead larger five-print absolute moves?",
+      "verdict": "held",
+      "verdict_line": "Train median daily log return is 0.071%. MAD scale is 1.852%. Holdout days with |z| above 4: 53. Their mean absolute five-print return is 16.789%, against 4.483% on the other holdout days. The flagged days were followed by larger absolute moves. The holdout contains the 2020 break, and a large print often sits next to another large print.",
+      "chart": {
+        "type": "bars",
+        "stat": "53",
+        "stat_label": "holdout days with |z| > 4",
+        "categories": [
+          "Flagged",
+          "Other holdout days"
+        ],
+        "series": [
+          {
+            "name": "Mean absolute five-print log return",
+            "values": [
+              0.16789318425215038,
+              0.0448348823806981
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Holdout RWTC days scored with the frozen train center and MAD",
+        "columns": [
+          "Bucket",
+          "n",
+          "Mean absolute five-print return"
+        ],
+        "rows": [
+          [
+            "|z| > 4",
+            "53",
+            "16.789%"
+          ],
+          [
+            "The rest of the holdout",
+            "1625",
+            "4.483%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "The flag is a robust z-score. Center is the train median of adjacent daily log returns. Scale is 1.4826 times the train median absolute deviation. Both numbers are frozen.",
+            "A flag is descriptive. The test is whether the next five published prints move more, in absolute log return, after a flag than after an ordinary holdout day."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "Holdout days with |z| above 4 are the flags. The bar is a higher mean absolute five-print return on flags than on the other holdout days.",
+            "No new cutoff is chosen after seeing the holdout."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train median daily log return is 0.071%. MAD scale is 1.852%. Holdout days with |z| above 4: 53. Their mean absolute five-print return is 16.789%, against 4.483% on the other holdout days. The flagged days were followed by larger absolute moves. The holdout contains the 2020 break, and a large print often sits next to another large print."
+          ]
+        }
+      ],
+      "stats": {
+        "center": 0.0007083407414997901,
+        "scale": 0.018516304085700694,
+        "n_flags": 53,
+        "flag_mean": 0.16789318425215038,
+        "quiet_mean": 0.0448348823806981
+      }
+    },
+    {
+      "slug": "forecast",
+      "index": "10",
+      "title": "Forecast",
+      "kicker": "Seasonal naive against zero",
+      "question": "On holdout months, does the pre-2020 mean for that calendar month beat a forecast of a zero monthly log return?",
+      "verdict": "held",
+      "verdict_line": "Holdout months: 81. Mean absolute error of the train calendar-month mean is 10.162%. Mean absolute error of a flat zero forecast is 10.365%. The difference is 0.204%. The calendar mean is lower error, which was the bar.",
+      "chart": {
+        "type": "bars",
+        "stat": "10.162%",
+        "stat_label": "holdout MAE, seasonal naive",
+        "categories": [
+          "Seasonal naive",
+          "Flat zero",
+          "TimesFM median"
+        ],
+        "series": [
+          {
+            "name": "Holdout mean absolute error",
+            "values": [
+              0.10161794302554045,
+              0.10365345646752568,
+              0.105352314571635
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Holdout monthly RWTC log return, mean absolute error",
+        "columns": [
+          "Forecast",
+          "Holdout months",
+          "MAE"
+        ],
+        "rows": [
+          [
+            "Train mean for that calendar month",
+            "81",
+            "10.162%"
+          ],
+          [
+            "Flat zero",
+            "81",
+            "10.365%"
+          ],
+          [
+            "TimesFM median, one month ahead",
+            "81",
+            "10.535%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "A month's realized log return is the sum of the adjacent daily RWTC log returns whose end date falls in that month.",
+            "The seasonal naive predicts the mean of train months with the same calendar month. The flat forecast predicts zero. Both are fixed before the holdout is scored."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "Mean absolute error on holdout months decides it. The seasonal forecast has to be strictly lower error than zero.",
+            "TimesFM 3.0 median, one month ahead, expanding history. Holdout months: 81. TimesFM mean absolute error is 10.535%. The train calendar-month mean is 10.162%. A flat zero is 10.365%. TimesFM error is higher than the calendar mean. The calendar mean uses only months before 2020. TimesFM sees every completed month before the month it forecasts, including holdout months already printed. The comparison uses the same holdout months and the same absolute error. TimesFM does not choose the rule."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Holdout months: 81. Mean absolute error of the train calendar-month mean is 10.162%. Mean absolute error of a flat zero forecast is 10.365%. The difference is 0.204%. The calendar mean is lower error, which was the bar.",
+            "TimesFM 3.0 median, one month ahead, expanding history. Holdout months: 81. TimesFM mean absolute error is 10.535%. The train calendar-month mean is 10.162%. A flat zero is 10.365%. TimesFM error is higher than the calendar mean. The calendar mean uses only months before 2020. TimesFM sees every completed month before the month it forecasts, including holdout months already printed. The comparison uses the same holdout months and the same absolute error. TimesFM does not choose the rule."
+          ]
+        }
+      ],
+      "stats": {
+        "seasonal_mae": 0.10161794302554045,
+        "flat_mae": 0.10365345646752568,
+        "n": 81,
+        "timesfm_mae": 0.105352314571635
+      }
+    },
+    {
+      "slug": "inv-surprise",
+      "index": "11",
+      "title": "Inventory surprise proxy",
+      "kicker": "Mean of the prior 52 weeks",
+      "question": "Is the holdout correlation between this mean-baseline stock surprise and the nominal EIA Wednesday RWTC return negative?",
+      "verdict": "failed",
+      "verdict_line": "Train correlation of the mean-baseline surprise with the release-day RWTC log return is -0.098. Holdout correlation is 0.022. The holdout correlation is not negative. The bar was missed.",
+      "group": "metric",
+      "formula": "Weekly change in EIA WCESTUS1, kept only when the week-ending dates are 7 days apart, minus the mean of the prior 52 kept changes. The mean uses weeks strictly before the current week. This is a trailing baseline, not an analyst survey.",
+      "chart": {
+        "type": "bars",
+        "stat": "0.022",
+        "stat_label": "correlation",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "correlation",
+            "values": [
+              -0.09779882904281549,
+              0.021959545533036
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "WCESTUS1 change minus the prior 52-week mean, versus the Wednesday RWTC log return",
+        "columns": [
+          "Window",
+          "n",
+          "Correlation"
+        ],
+        "rows": [
+          [
+            "Train",
+            "1584",
+            "-0.098"
+          ],
+          [
+            "Holdout",
+            "348",
+            "0.022"
+          ],
+          [
+            "Skipped, no Wednesday RWTC print",
+            "307",
+            ""
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Is the holdout correlation between this mean-baseline stock surprise and the nominal EIA Wednesday RWTC return negative?",
+            "Weekly change in EIA WCESTUS1, kept only when the week-ending dates are 7 days apart, minus the mean of the prior 52 kept changes. The mean uses weeks strictly before the current week. This is a trailing baseline, not an analyst survey."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The EIA week ends Friday. The nominal release is the Wednesday five days later. If that Wednesday has no RWTC print, the week is skipped. A Thursday holiday release is not moved.",
+            "The bar is a negative holdout correlation. The threshold is not refit after the holdout is seen."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train correlation of the mean-baseline surprise with the release-day RWTC log return is -0.098. Holdout correlation is 0.022. The holdout correlation is not negative. The bar was missed."
+          ]
+        }
+      ],
+      "stats": {
+        "train_correlation": -0.09779882904281549,
+        "holdout_correlation": 0.021959545533036,
+        "n_train": 1584,
+        "n_holdout": 348
+      }
+    },
+    {
+      "slug": "cushing-cover",
+      "index": "12",
+      "title": "Cushing days of cover",
+      "kicker": "Stocks over refinery crude inputs",
+      "question": "Does the gap between five-print RWTC returns when Cushing days of cover are below the pre-2020 20th percentile, and when they are not, keep its sign after 2019?",
+      "verdict": "held",
+      "verdict_line": "Train 20th percentile of days of cover is 1.403. Train gap, low cover minus the rest, is -0.204% (145 low, 581 rest). Holdout gap is -0.319% (60 low, 290 rest). The holdout kept the train sign.",
+      "group": "metric",
+      "formula": "Cushing crude stocks (thousand barrels) divided by US refiner net inputs of crude (thousand barrels per day) on the same Friday. The result is days. Low cover is a print below the train 20th percentile, frozen at 1.403 days.",
+      "chart": {
+        "type": "bars",
+        "stat": "-0.319%",
+        "stat_label": "low cover minus the rest",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "low cover minus the rest",
+            "values": [
+              -0.002035005807071841,
+              -0.00318696136131525
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Five-print RWTC log return when days of cover are below the frozen train 20th percentile",
+        "columns": [
+          "Window",
+          "Low n",
+          "Rest n",
+          "Low minus rest"
+        ],
+        "rows": [
+          [
+            "Train",
+            "145",
+            "581",
+            "-0.204%"
+          ],
+          [
+            "Holdout",
+            "60",
+            "290",
+            "-0.319%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Does the gap between five-print RWTC returns when Cushing days of cover are below the pre-2020 20th percentile, and when they are not, keep its sign after 2019?",
+            "Cushing crude stocks (thousand barrels) divided by US refiner net inputs of crude (thousand barrels per day) on the same Friday. The result is days. Low cover is a print below the train 20th percentile, frozen at 1.403 days."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The price date is the Friday print when RWTC exists that day, otherwise the next RWTC print within 3 calendar days. The return then steps five published RWTC prints.",
+            "The percentile is nearest-rank on the train window only."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train 20th percentile of days of cover is 1.403. Train gap, low cover minus the rest, is -0.204% (145 low, 581 rest). Holdout gap is -0.319% (60 low, 290 rest). The holdout kept the train sign."
+          ]
+        }
+      ],
+      "stats": {
+        "threshold": 1.4030880420499343,
+        "train_gap": -0.002035005807071841,
+        "holdout_gap": -0.00318696136131525
+      }
+    },
+    {
+      "slug": "curve-z",
+      "index": "13",
+      "title": "Curve regime score",
+      "kicker": "Train mean and standard deviation",
+      "question": "Does the gap between five-print RWTC returns when the curve z-score is above 1 and when it is below -1 keep its sign after 2019?",
+      "verdict": "held",
+      "verdict_line": "Train gap, z above 1 minus z below -1, is -1.331% (927 high, 996 low). Holdout gap is -5.886% (336 high, 39 low). The holdout kept the train sign.",
+      "group": "metric",
+      "formula": "(CL1_MINUS_CL4 minus the train mean) divided by the train population standard deviation. Train mean -0.142 dollars per barrel. Train standard deviation 1.850. Both moments stop at 31 Dec 2019 and are applied to every later print. A positive CL1_MINUS_CL4 means the front NYMEX contract is above the fourth.",
+      "chart": {
+        "type": "bars",
+        "stat": "-5.886%",
+        "stat_label": "z>1 minus z<-1",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "z>1 minus z<-1",
+            "values": [
+              -0.013308086333160817,
+              -0.058856374460832896
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Five-print RWTC return, high curve z versus low curve z",
+        "columns": [
+          "Window",
+          "z>1 n",
+          "z<-1 n",
+          "Gap"
+        ],
+        "rows": [
+          [
+            "Train",
+            "927",
+            "996",
+            "-1.331%"
+          ],
+          [
+            "Holdout",
+            "336",
+            "39",
+            "-5.886%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Does the gap between five-print RWTC returns when the curve z-score is above 1 and when it is below -1 keep its sign after 2019?",
+            "(CL1_MINUS_CL4 minus the train mean) divided by the train population standard deviation. Train mean -0.142 dollars per barrel. Train standard deviation 1.850. Both moments stop at 31 Dec 2019 and are applied to every later print. A positive CL1_MINUS_CL4 means the front NYMEX contract is above the fourth."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The score is a level z-score of the stored spread, not a new curve. EIA's contract history in this snapshot ends where RCLC1 ends.",
+            "Prints with z between -1 and 1 are in neither bucket."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train gap, z above 1 minus z below -1, is -1.331% (927 high, 996 low). Holdout gap is -5.886% (336 high, 39 low). The holdout kept the train sign."
+          ]
+        }
+      ],
+      "stats": {
+        "train_mean": -0.14226518677646496,
+        "train_std": 1.850104186328198,
+        "train_gap": -0.013308086333160817,
+        "holdout_gap": -0.058856374460832896
+      }
+    },
+    {
+      "slug": "cot-z",
+      "index": "14",
+      "title": "Positioning z-score",
+      "kicker": "Managed money net over open interest",
+      "question": "Does the gap between five-print RWTC returns when the managed-money z-score is above 1.5, and when it is not, keep its sign after 2019?",
+      "verdict": "failed",
+      "verdict_line": "Train gap, z above 1.5 minus the rest, is -0.128% (39 extreme, 480 rest). Holdout gap is 1.722% (11 extreme, 340 rest). The holdout flipped the train sign.",
+      "group": "metric",
+      "formula": "Managed-money net divided by open interest on CFTC 067651. Z-score uses the train mean and the train population standard deviation of that ratio. Train mean 0.1146. Train standard deviation 0.0386. The percentile is the share of train ratios at or below the current print. Spreads are not inside the net.",
+      "chart": {
+        "type": "bars",
+        "stat": "1.722%",
+        "stat_label": "z>1.5 minus the rest",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "z>1.5 minus the rest",
+            "values": [
+              -0.0012776337423018327,
+              0.01722216019690707
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Five-print RWTC return when COT_Z is above 1.5",
+        "columns": [
+          "Window",
+          "Extreme n",
+          "Rest n",
+          "Gap"
+        ],
+        "rows": [
+          [
+            "Train",
+            "39",
+            "480",
+            "-0.128%"
+          ],
+          [
+            "Holdout",
+            "11",
+            "340",
+            "1.722%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Does the gap between five-print RWTC returns when the managed-money z-score is above 1.5, and when it is not, keep its sign after 2019?",
+            "Managed-money net divided by open interest on CFTC 067651. Z-score uses the train mean and the train population standard deviation of that ratio. Train mean 0.1146. Train standard deviation 0.0386. The percentile is the share of train ratios at or below the current print. Spreads are not inside the net."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The report date is joined to RWTC on that date, or to the next print within 3 calendar days.",
+            "COT_PCT is the frozen train percentile of the same ratio. The scored test uses the z-score, not a second cutoff chosen later."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train gap, z above 1.5 minus the rest, is -0.128% (39 extreme, 480 rest). Holdout gap is 1.722% (11 extreme, 340 rest). The holdout flipped the train sign."
+          ]
+        }
+      ],
+      "stats": {
+        "train_mean": 0.11459191379310346,
+        "train_std": 0.03857577647902893,
+        "train_gap": -0.0012776337423018327,
+        "holdout_gap": 0.01722216019690707
+      }
+    },
+    {
+      "slug": "crack-gap",
+      "index": "15",
+      "title": "Crack gap",
+      "kicker": "Distance from the train median",
+      "question": "Does the correlation between the crack's distance from its pre-2020 median and the next five-print RWTC return keep its sign after 2019?",
+      "verdict": "failed",
+      "verdict_line": "Train correlation of the crack gap with the next five-print RWTC return is 0.036. Holdout correlation is -0.030. The holdout flipped the train sign.",
+      "group": "metric",
+      "formula": "CRACK_321 minus its train median. Train median 16.739 dollars per barrel. CRACK_321 is ((2 * RBOB_F1 + HO_F1) / 3) * 42 minus RCLC1. A date is absent when any input is absent. The futures workbooks end before the spot series.",
+      "chart": {
+        "type": "bars",
+        "stat": "-0.030",
+        "stat_label": "correlation",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "correlation",
+            "values": [
+              0.03590559489585627,
+              -0.030125119780125473
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Crack minus the frozen train median, versus the next five RWTC prints",
+        "columns": [
+          "Window",
+          "n",
+          "Correlation"
+        ],
+        "rows": [
+          [
+            "Train",
+            "3371",
+            "0.036"
+          ],
+          [
+            "Holdout",
+            "1066",
+            "-0.030"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Does the correlation between the crack's distance from its pre-2020 median and the next five-print RWTC return keep its sign after 2019?",
+            "CRACK_321 minus its train median. Train median 16.739 dollars per barrel. CRACK_321 is ((2 * RBOB_F1 + HO_F1) / 3) * 42 minus RCLC1. A date is absent when any input is absent. The futures workbooks end before the spot series."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The bar is sign agreement of the correlation. A rich crack is not given a second rule after the result is in."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train correlation of the crack gap with the next five-print RWTC return is 0.036. Holdout correlation is -0.030. The holdout flipped the train sign."
+          ]
+        }
+      ],
+      "stats": {
+        "train_median": 16.739,
+        "train_correlation": 0.03590559489585627,
+        "holdout_correlation": -0.030125119780125473
+      }
+    },
+    {
+      "slug": "realized-vol",
+      "index": "16",
+      "title": "Realized volatility",
+      "kicker": "No implied vol in the free file",
+      "question": "When 20-print realized volatility sits at or above its pre-2020 80th percentile, is the holdout mean absolute five-print RWTC return larger than on the other days?",
+      "verdict": "held",
+      "verdict_line": "Train gap in mean absolute five-print return, high vol minus the rest, is 2.618%. Holdout gap is 3.946% (383 high, 1295 rest). The holdout gap is positive, which was the bar.",
+      "group": "metric",
+      "formula": "Population standard deviation of the last 20 adjacent RWTC log returns, times the square root of 252. A return enters only when the two prints are 1 to 5 calendar days apart. High realized vol is at or above the train 80th percentile, frozen at 0.4535. Implied volatility is not in this archive. No implied-versus-realized ratio is computed.",
+      "chart": {
+        "type": "bars",
+        "stat": "3.946%",
+        "stat_label": "high vol minus the rest",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "high vol minus the rest",
+            "values": [
+              0.026182324139487373,
+              0.03945896730108853
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Mean absolute five-print RWTC return when RV20 is at or above the frozen train 80th percentile",
+        "columns": [
+          "Window",
+          "High n",
+          "Rest n",
+          "High minus rest"
+        ],
+        "rows": [
+          [
+            "Train",
+            "1550",
+            "6198",
+            "2.618%"
+          ],
+          [
+            "Holdout",
+            "383",
+            "1295",
+            "3.946%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "When 20-print realized volatility sits at or above its pre-2020 80th percentile, is the holdout mean absolute five-print RWTC return larger than on the other days?",
+            "Population standard deviation of the last 20 adjacent RWTC log returns, times the square root of 252. A return enters only when the two prints are 1 to 5 calendar days apart. High realized vol is at or above the train 80th percentile, frozen at 0.4535. Implied volatility is not in this archive. No implied-versus-realized ratio is computed."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The bar is a positive holdout gap. The train gap is reported and is not used to move the cutoff.",
+            "An options implied volatility would need a free, redistributable options history. This snapshot does not have one."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train gap in mean absolute five-print return, high vol minus the rest, is 2.618%. Holdout gap is 3.946% (383 high, 1295 rest). The holdout gap is positive, which was the bar."
+          ]
+        }
+      ],
+      "stats": {
+        "threshold": 0.45349887153368024,
+        "train_gap": 0.026182324139487373,
+        "holdout_gap": 0.03945896730108853
+      }
+    },
+    {
+      "slug": "eia-profile",
+      "index": "17",
+      "title": "EIA-day reaction profile",
+      "kicker": "Four frozen surprise bins",
+      "question": "Do the four pre-2020 surprise bins rank the Wednesday RWTC return the same way after 2019?",
+      "verdict": "held",
+      "verdict_line": "Train quartile edges, thousand barrels: -3060.0, 39.5, 2773.0. Spearman correlation of the bin means is 0.400. The correlation is above zero, which was the bar.",
+      "group": "metric",
+      "formula": "The same weekly WCESTUS1 surprise as the inventory study: change minus the prior 52-week median. Train quartile edges are frozen. Each week is placed in one of four bins. The score is the Spearman correlation of the train bin-mean release return with the holdout bin-mean.",
+      "chart": {
+        "type": "bars",
+        "stat": "0.400",
+        "stat_label": "Spearman of bin means",
+        "categories": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "series": [
+          {
+            "name": "Spearman of bin means",
+            "values": [
+              0.005569023701631538,
+              -0.0012716594718731441,
+              -0.008770955048119214,
+              0.0023961838508128022
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Mean Wednesday RWTC log return by inventory-surprise quartile",
+        "columns": [
+          "Quartile",
+          "Train mean",
+          "Holdout mean"
+        ],
+        "rows": [
+          [
+            "1",
+            "0.424%",
+            "0.557%"
+          ],
+          [
+            "2",
+            "0.301%",
+            "-0.127%"
+          ],
+          [
+            "3",
+            "-0.106%",
+            "-0.877%"
+          ],
+          [
+            "4",
+            "-0.232%",
+            "0.240%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Do the four pre-2020 surprise bins rank the Wednesday RWTC return the same way after 2019?",
+            "The same weekly WCESTUS1 surprise as the inventory study: change minus the prior 52-week median. Train quartile edges are frozen. Each week is placed in one of four bins. The score is the Spearman correlation of the train bin-mean release return with the holdout bin-mean."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "Quartile 1 is the most negative surprise (a larger draw, or a smaller build, than the prior 52-week median).",
+            "Spearman is the Pearson correlation of the ranks of the four means. The bar is a positive correlation. Bins are not reordered after the holdout."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train quartile edges, thousand barrels: -3060.0, 39.5, 2773.0. Spearman correlation of the bin means is 0.400. The correlation is above zero, which was the bar."
+          ]
+        }
+      ],
+      "stats": {
+        "correlation": 0.3999999999999999,
+        "q25": -3060.0,
+        "q50": 39.5,
+        "q75": 2773.0
+      }
+    },
+    {
+      "slug": "seas-stock",
+      "index": "18",
+      "title": "Seasonal stock deviation",
+      "kicker": "Level minus the train month mean",
+      "question": "Does the correlation between seasonally adjusted commercial crude stocks and the Wednesday RWTC return keep its sign after 2019?",
+      "verdict": "held",
+      "verdict_line": "Train correlation of the seasonal deviation with the Wednesday RWTC return is 0.006. Holdout correlation is 0.119. The holdout kept the train sign.",
+      "group": "metric",
+      "formula": "WCESTUS1 level minus the train mean level for that calendar month. Month means are frozen on weeks before 2020. A later January is compared with the pre-2020 January mean, not with a mean that includes itself.",
+      "chart": {
+        "type": "bars",
+        "stat": "0.119",
+        "stat_label": "correlation",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "correlation",
+            "values": [
+              0.006215618434153283,
+              0.11865370552204442
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "WCESTUS1 minus the frozen calendar-month mean, versus the Wednesday RWTC return",
+        "columns": [
+          "Window",
+          "n",
+          "Correlation"
+        ],
+        "rows": [
+          [
+            "Train",
+            "1584",
+            "0.006"
+          ],
+          [
+            "Holdout",
+            "348",
+            "0.119"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Does the correlation between seasonally adjusted commercial crude stocks and the Wednesday RWTC return keep its sign after 2019?",
+            "WCESTUS1 level minus the train mean level for that calendar month. Month means are frozen on weeks before 2020. A later January is compared with the pre-2020 January mean, not with a mean that includes itself."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The bar is sign agreement. The popular sign would be negative. The test does not switch to that story after the numbers are in."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train correlation of the seasonal deviation with the Wednesday RWTC return is 0.006. Holdout correlation is 0.119. The holdout kept the train sign."
+          ]
+        }
+      ],
+      "stats": {
+        "train_correlation": 0.006215618434153283,
+        "holdout_correlation": 0.11865370552204442
+      }
+    },
+    {
+      "slug": "util-anomaly",
+      "index": "19",
+      "title": "Refinery utilization",
+      "kicker": "Distance from the train median",
+      "question": "On weeks when refinery utilization is further from its pre-2020 median than the train 90th percentile of that distance, is the holdout mean absolute Wednesday RWTC return larger?",
+      "verdict": "held",
+      "verdict_line": "Train gap in mean absolute Wednesday return, anomaly minus the rest, is 0.264%. Holdout gap is 0.787% (62 anomalies, 286 other weeks). The holdout gap is positive, which was the bar.",
+      "group": "metric",
+      "formula": "WPULEUS3 minus its train median, in percentage points of utilization. Train median 90.40 percent. An anomaly is an absolute deviation at or above the train 90th percentile of absolute deviations, frozen at 7.10 points.",
+      "chart": {
+        "type": "bars",
+        "stat": "0.787%",
+        "stat_label": "anomaly minus the rest",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "anomaly minus the rest",
+            "values": [
+              0.002637757281970972,
+              0.007873305601956732
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "Mean absolute Wednesday RWTC return on utilization anomalies",
+        "columns": [
+          "Window",
+          "Anomaly n",
+          "Rest n",
+          "Anomaly minus rest"
+        ],
+        "rows": [
+          [
+            "Train",
+            "137",
+            "1193",
+            "0.264%"
+          ],
+          [
+            "Holdout",
+            "62",
+            "286",
+            "0.787%"
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "On weeks when refinery utilization is further from its pre-2020 median than the train 90th percentile of that distance, is the holdout mean absolute Wednesday RWTC return larger?",
+            "WPULEUS3 minus its train median, in percentage points of utilization. Train median 90.40 percent. An anomaly is an absolute deviation at or above the train 90th percentile of absolute deviations, frozen at 7.10 points."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The bar is a positive holdout gap in absolute return. The cutoff stays at the train 90th percentile."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train gap in mean absolute Wednesday return, anomaly minus the rest, is 0.264%. Holdout gap is 0.787% (62 anomalies, 286 other weeks). The holdout gap is positive, which was the bar."
+          ]
+        }
+      ],
+      "stats": {
+        "center": 90.4,
+        "cutoff": 7.099999999999994,
+        "train_gap": 0.002637757281970972,
+        "holdout_gap": 0.007873305601956732
+      }
+    },
+    {
+      "slug": "spr-flow",
+      "index": "20",
+      "title": "SPR flow",
+      "kicker": "Weekly change in the reserve",
+      "question": "Is the holdout correlation between the weekly SPR stock change and the Wednesday RWTC return negative?",
+      "verdict": "failed",
+      "verdict_line": "Train correlation of the SPR change with the Wednesday RWTC return is 0.019. Holdout correlation is 0.047. The holdout correlation is not negative. The bar was missed.",
+      "group": "metric",
+      "formula": "Weekly change in EIA WCSSTUS1, the Strategic Petroleum Reserve, thousand barrels. Kept only when the two week-ending dates are 7 days apart. A negative change is a draw.",
+      "chart": {
+        "type": "bars",
+        "stat": "0.047",
+        "stat_label": "correlation",
+        "categories": [
+          "Train",
+          "Holdout"
+        ],
+        "series": [
+          {
+            "name": "correlation",
+            "values": [
+              0.01853027661023447,
+              0.046713820307019385
+            ]
+          }
+        ]
+      },
+      "table": {
+        "caption": "WCSSTUS1 weekly change versus the Wednesday RWTC log return",
+        "columns": [
+          "Window",
+          "n",
+          "Correlation"
+        ],
+        "rows": [
+          [
+            "Train",
+            "1584",
+            "0.019"
+          ],
+          [
+            "Holdout",
+            "348",
+            "0.047"
+          ],
+          [
+            "Skipped, no Wednesday RWTC print",
+            "359",
+            ""
+          ]
+        ]
+      },
+      "cells": [
+        {
+          "label": "Question",
+          "body": [
+            "Is the holdout correlation between the weekly SPR stock change and the Wednesday RWTC return negative?",
+            "Weekly change in EIA WCSSTUS1, the Strategic Petroleum Reserve, thousand barrels. Kept only when the two week-ending dates are 7 days apart. A negative change is a draw."
+          ]
+        },
+        {
+          "label": "Method",
+          "body": [
+            "The bar is a negative holdout correlation: a draw (negative change) lining up with a higher Wednesday return.",
+            "Policy announcements that are not in the stock file are not events in this test."
+          ]
+        },
+        {
+          "label": "Result",
+          "body": [
+            "Train correlation of the SPR change with the Wednesday RWTC return is 0.019. Holdout correlation is 0.047. The holdout correlation is not negative. The bar was missed."
+          ]
+        }
+      ],
+      "stats": {
+        "train_correlation": 0.01853027661023447,
+        "holdout_correlation": 0.046713820307019385
+      }
+    }
+  ]
+}
