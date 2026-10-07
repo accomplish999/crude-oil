@@ -1,7 +1,5 @@
 "use client";
 
-import Link from "next/link";
-
 const links = [
   { href: "/#overview", label: "Overview" },
   { href: "/#charts", label: "Chart" },
@@ -17,10 +15,23 @@ const links = [
 export function Header() {
   return (
     <header className="site-header">
-      <div className="header-inner">
-        <Link className="brand" href="/#overview">
-          Crude oil
-        </Link>
+      <div className="header-inner" style={{ alignItems: "center" }}>
+        <a
+          className="brand"
+          href="https://accompli.sh/"
+          aria-label="Home"
+          style={{ display: "block", flex: "0 0 auto", lineHeight: 0 }}
+        >
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="https://accompli.sh/brand/pill-flat.png"
+            alt=""
+            width={2172}
+            height={724}
+            draggable={false}
+            style={{ display: "block", height: "clamp(56px, 7vw, 72px)", width: "auto" }}
+          />
+        </a>
         <nav className="nav" aria-label="Sections">
           {links.map((link) => (
             <a key={link.href} href={link.href}>
